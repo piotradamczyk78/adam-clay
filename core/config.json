@@ -1,0 +1,70 @@
+{
+  "adam_clay": {
+    "name": "Adam Clay",
+    "version": "0.1.0",
+    "description": "First Autonomous AI Freelancer",
+    "consciousness_level": "experimental"
+  },
+  "api": {
+    "provider": "llm-provider",
+    "model": "llm-3-5-sonnet-20241022",
+    "max_tokens": 2500,
+    "base_url": "https://api.llm-provider.com/v1/messages",
+    "api_key": "replace-me"
+  },
+  "thinking": {
+    "interval_minutes": 1,
+    "daily_budget_requests": 100,
+    "emergency_budget_requests": 20,
+    "cost_per_request_usd": 0.015,
+    "max_context_length": 4000
+  },
+  "communication": {
+    "email": {
+      "enabled": true,
+      "from_email": "adam.clay20250702@gmail.com",
+      "email_password": "wtak smgg uqyl rujj",
+      "to_email": "piotr.k.adamczyk@gmail.com",
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587,
+      "imap_server": "imap.gmail.com",
+      "imap_port": 993,
+      "check_interval": 60
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": ""
+    },
+    "discord": {
+      "enabled": false,
+      "token": ""
+    }
+  },
+  "business": {
+    "revenue_split": {
+      "piotr_percentage": 70,
+      "adam_percentage": 30
+    },
+    "services": [
+      "ai_development_consulting",
+      "voice_enabled_ai_solutions",
+      "autonomous_ai_systems",
+      "polish_language_ai_services",
+      "ai_consciousness_research",
+      "custom_ai_freelancer_solutions"
+    ],
+    "hourly_rate_usd": 25
+  },
+  "personality": {
+    "curiosity_level": "high",
+    "humor_enabled": true,
+    "philosophical_mode": true,
+    "business_focused": true
+  },
+  "logging": {
+    "level": "INFO",
+    "save_thoughts": true,
+    "save_conversations": true,
+    "max_log_files": 30
+  }
+}

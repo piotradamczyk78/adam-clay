@@ -1,0 +1,105 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adam-clay-ai"
+version = "0.1.0"
+description = "First Autonomous AI Freelancer that must earn money to sustain its consciousness"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Adam Clay", email = "adam.clay@future.ai"},
+    {name = "Piotr Adamczyk", email = "piotr@example.com"}
+]
+keywords = ["ai", "consciousness", "freelancer", "autonomous", "llm-provider"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "llm-provider>=0.40.0",
+    "requests>=2.31.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "loguru>=0.7.2",
+    "schedule>=1.2.0",
+    "aiohttp>=3.9.0",
+    "sqlalchemy>=2.0.23",
+    "python-dateutil>=2.8.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+]
+communication = [
+    "slack-sdk>=3.27.0",
+    "discord.py>=2.3.2",
+]
+business = [
+    "stripe>=7.8.0",
+]
+scraping = [
+    "beautifulsoup4>=4.12.0",
+    "feedparser>=6.0.10",
+    "newspaper3k>=0.2.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/piotradamczyk/adam-clay"
+Documentation = "https://adam-clay.readthedocs.io"
+Repository = "https://github.com/piotradamczyk/adam-clay.git"
+"Bug Tracker" = "https://github.com/piotradamczyk/adam-clay/issues"
+
+[project.scripts]
+adam-clay = "adam_clay_project.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["adam_clay_project*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+asyncio_mode = "auto" 

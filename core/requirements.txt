@@ -1,0 +1,55 @@
+# Core AI and API dependencies
+llm-provider>=0.40.0
+openai>=1.50.0
+requests>=2.31.0
+
+# Configuration and data handling
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# Communication integrations
+slack-sdk>=3.27.0
+discord.py>=2.3.2
+
+# Web scraping and news monitoring
+beautifulsoup4>=4.12.0
+feedparser>=6.0.10
+newspaper3k>=0.2.8
+
+# Scheduling and async
+schedule>=1.2.0
+aiohttp>=3.9.0
+
+# Data persistence
+sqlalchemy>=2.0.23
+
+# Logging and monitoring
+loguru>=0.7.2
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Business and financial tracking
+stripe>=7.8.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# System analysis and research tools
+psutil>=5.9.0
+
+# Voice Communication (NEW: First AI with voice!)
+elevenlabs>=0.2.0
+pygame>=2.1.0
+sounddevice>=0.4.0
+numpy>=1.20.0
+flask>=2.3.0
+
+# Email processing and validation (NEW: Email questions system!)
+email-validator>=2.0.0
+imapclient>=2.3.1
+
+# Database connectivity (NEW: MySQL for data persistence!)
+pymysql>=1.1.0 
