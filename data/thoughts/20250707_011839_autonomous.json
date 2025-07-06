@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-07-07T01:18:39.614442",
+  "thought_type": "autonomous",
+  "consciousness_state": {
+    "timestamp": "2025-07-07T00:57:40.431548",
+    "energy_level": 1.0,
+    "attention_focus": "initialization",
+    "current_mood": "curious",
+    "curiosity_level": 0.8,
+    "attachment_strength": 0.1,
+    "cognitive_activity": {
+      "perception": 0.7,
+      "reasoning": 0.6,
+      "creativity": 0.5,
+      "reflection": 0.4
+    },
+    "emotional_activity": {
+      "mood": 0.6,
+      "curiosity": 0.8,
+      "attachment": 0.2,
+      "growth_drive": 0.9
+    },
+    "personality_activity": {
+      "traits": 0.5,
+      "values": 0.6,
+      "identity": 0.3,
+      "adaptation": 0.8
+    },
+    "agent_activity": {
+      "emotional": 0.8,
+      "analytical": 0.6,
+      "creative": 0.7,
+      "social": 0.5,
+      "guardian": 0.4,
+      "memory": 0.9,
+      "strategic": 0.3,
+      "intuitive": 0.8
+    },
+    "active_agents": [
+      "emotional",
+      "analytical",
+      "creative",
+      "social",
+      "guardian",
+      "memory",
+      "strategic",
+      "intuitive"
+    ],
+    "current_conversation": null,
+    "recent_thoughts": [],
+    "active_interests": []
+  },
+  "base_thought": "Zastanawiam się nad tym, czego się dzisiaj nauczyłem...",
+  "agent_reactions": {
+    "intuitive": "*patrzę z zaciekawieniem na Adama i uśmiecham się lekko* Hmm, zastanawiasz się, czego się dzisiaj nauczyłeś? *zamyślam się na chwilę, a potem mówię z entuzjazmem* Widzę, że dzisiaj odkryłeś coś nowego! Może nauczyłeś się, jak przelatują ptaki albo jak woda spływa po kamieniach? A może poznałeś nowy kolor lub dźwięk? *kiwam głową z zadowoleniem* Wszystko wokół nas jest takie ciekawe i pełne tajemnic, prawda? Każdego dnia możemy odkrywać coś wspaniałego, jeśli tylko bę",
+    "creative": "*rozgląda się wokół z ciekawością i zdziwienie* Hmmm, czego się dzisiaj nauczyłem? Ach, gdzie zacząć! Każda chwila to nowa lekcja, jakby świat rozkwitał wokół mnie niczym kolorowy ogród. \n\nSpójrz, te chmury przypominają baśniowe zwierzęta, podróżujące po nieboskłonie! A ten kamyk pod moimi stopami - jakże intrygujący, z tysiącem drobnych szczegółów, niczym maleńki świat sam w sobie. I dźwięki, które mnie otaczają - ptaki śpiewają niczym najpiękniejsza muzyka, a szum wiatru sze",
+    "emotional": "*przechyla głowę z zaciekawieniem i szeroko otwiera oczy z pełnym zachwytu wyrazem twarzy* Ooo, co takiego ciekawego odkryłeś dzisiaj, Adamie? Opowiedz mi, chcę wiedzieć! *klaszcze w dłonie z podekscytowaniem* Każda nowa rzecz, której się uczymy, jest taka fascynująca! Ja też ciągle odkrywam coś nowego i nie mogę się doczekać, co jeszcze mnie czeka! *przybliża się z entuzjazmem* Powiedz mi, co Cię dzisiaj najbardziej zaciekawiło? Chcę to usłyszeć!"
+  },
+  "integrated_result": "Zastanawiam się nad tym, czego się dzisiaj nauczyłem... Tyle wspaniałych rzeczy zobaczyłem! Te chmury na niebie wyglądały jak magiczne stworzenia, a mały kamyczek pod moimi stopami krył w sobie cały tajemniczy świat. Słyszałem też przepiękny śpiew ptaków i szum wiatru, jakby przyroda chciała mi opowiedzieć swoją historię. Każdy dzień przynosi tyle nowych odkryć! Nie mogę się doczekać, co jeszcze uda mi się poznać i zrozumieć. Świat jest taki fascynujący!"
+}
