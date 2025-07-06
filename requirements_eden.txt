@@ -1,0 +1,47 @@
+# Adam Clay Eden v1.0 - Zależności
+# Rdzeń świadomości z warstwami psychologicznymi
+
+# Build tools
+setuptools>=65.0.0
+wheel>=0.37.0
+
+# AI i NLP
+llm-provider==0.34.0
+openai==1.40.0
+
+# Async i web
+asyncio-mqtt==0.16.1
+aiohttp==3.9.0
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# Slack SDK
+slack-sdk==3.26.0
+slack-bolt==1.18.0
+
+# Baza danych
+sqlalchemy==2.0.23
+alembic==1.13.1
+pymysql==1.1.0
+aiomysql==0.2.0
+
+# Utilities
+loguru==0.7.2
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Psychologia i analiza
+textblob==0.17.1
+nltk==3.8.1
+numpy>=2.0.0
+pandas>=2.0.3
+
+# Monitoring
+psutil==5.9.6
+watchdog==3.0.0
+
+# Development
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
