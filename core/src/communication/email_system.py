@@ -103,9 +103,10 @@ class UserQuestion:
         )
 
 class EmailQuestionSystem:
-    def __init__(self, config: Dict[str, Any], logger: logging.Logger):
+    def __init__(self, config: Dict[str, Any], logger: logging.Logger, laravel_api=None):
         self.config = config
         self.logger = logger
+        self.laravel_api = laravel_api  # Laravel API client for database operations
         
         # Email settings
         self.smtp_server = config.get("smtp_server", "smtp.gmail.com")
@@ -119,6 +120,21 @@ class EmailQuestionSystem:
         
         # Optional separate username (for services like Mailtrap)
         self.smtp_username = config.get("smtp_username", self.from_email)
+        
+        # Blocking questions configuration
+        blocking_config = config.get("blocking_questions", {})
+        
+        # Handle both dict (from JSON) and Pydantic model (from config_loader)
+        if hasattr(blocking_config, 'enabled'):  # Pydantic model
+            self.blocking_enabled = blocking_config.enabled
+            self.block_on_priorities = blocking_config.block_on_priorities
+            self.block_all_questions = blocking_config.block_all_questions
+            self.max_blocking_time_hours = blocking_config.max_blocking_time_hours
+        else:  # Dict
+            self.blocking_enabled = blocking_config.get("enabled", True)
+            self.block_on_priorities = blocking_config.get("block_on_priorities", ["CRITICAL"])
+            self.block_all_questions = blocking_config.get("block_all_questions", False)
+            self.max_blocking_time_hours = blocking_config.get("max_blocking_time_hours", 24)
         
         # Question management
         self.questions_dir = Path("data/questions")
@@ -150,6 +166,18 @@ class EmailQuestionSystem:
     def set_consciousness_callback(self, callback: Callable):
         """Set callback to consciousness for answering user questions"""
         self.consciousness_callback = callback
+    
+    def _should_question_block_execution(self, priority: QuestionPriority) -> bool:
+        """Determine if question should block execution based on configuration"""
+        if not self.blocking_enabled:
+            return False
+        
+        # Block all questions if configured
+        if self.block_all_questions:
+            return True
+        
+        # Block based on priority list
+        return priority.value in self.block_on_priorities
     
     def _load_questions(self):
         """Load questions from storage"""
@@ -243,9 +271,25 @@ class EmailQuestionSystem:
         # Add to pending questions
         self.pending_questions[question_id] = question
         
-        # Handle based on priority
-        if priority == QuestionPriority.CRITICAL:
-            await self._handle_critical_question(question)
+        # Determine if this question should block execution
+        blocks_execution = self._should_question_block_execution(priority)
+        
+        # Save to database via Laravel API if available
+        if self.laravel_api:
+            try:
+                await self.laravel_api.save_email_question(
+                    question_id=question_id,
+                    content=content,
+                    priority=priority.value,
+                    blocks_execution=blocks_execution,
+                    context=context
+                )
+            except Exception as e:
+                self.logger.error(f"❌ Failed to save question to database: {e}")
+        
+        # Handle based on priority and blocking configuration
+        if blocks_execution:
+            await self._handle_blocking_question(question)
         elif priority == QuestionPriority.IMPORTANT:
             await self._handle_important_question(question)
         elif priority == QuestionPriority.INFORMATIVE:
@@ -257,19 +301,24 @@ class EmailQuestionSystem:
         
         return question_id
     
-    async def _handle_critical_question(self, question: Question):
-        """Handle critical questions - block execution and wait for response"""
+    async def _handle_blocking_question(self, question: Question):
+        """Handle blocking questions - block execution and wait for response"""
         self.is_blocked = True
         self.blocking_question_id = question.id
         
+        # Choose priority label based on actual priority
+        priority_label = "KRYTYCZNE" if question.priority == QuestionPriority.CRITICAL else "BLOKUJĄCE"
+        priority_emoji = "🚨" if question.priority == QuestionPriority.CRITICAL else "⏸️"
+        
         await self._send_email(
-            subject=f"🚨 KRYTYCZNE PYTANIE od Adam Clay - BLOKUJE PROCES",
+            subject=f"{priority_emoji} {priority_label} PYTANIE od Adam Clay - BLOKUJE PROCES",
             content=f"""
-🤖 Adam Clay zadaje KRYTYCZNE pytanie i czeka na Twoją odpowiedź!
+🤖 Adam Clay zadaje {priority_label.lower()} pytanie i czeka na Twoją odpowiedź!
 
 ⏸️ PROCES MYŚLENIA JEST ZATRZYMANY do czasu odpowiedzi
 
 📧 ID Pytania: {question.id}
+🔥 Priorytet: {question.priority.value}
 🕐 Czas: {question.timestamp.strftime('%H:%M:%S %Y-%m-%d')}
 
 ❓ PYTANIE:
@@ -286,10 +335,10 @@ ANSWER:{question.id} Tak, zgadzam się z tym kierunkiem...
 
 ⚠️ Adam Clay czeka na Twoją odpowiedź i nie będzie myślał dopóki jej nie otrzyma!
             """,
-            priority="CRITICAL"
+            priority=question.priority.value
         )
         
-        print(f"\n🚨 ADAM CLAY - KRYTYCZNE PYTANIE!")
+        print(f"\n{priority_emoji} ADAM CLAY - {priority_label} PYTANIE!")
         print(f"❓ {question.content}")
         print(f"⏸️ Proces myślenia ZATRZYMANY - czekam na odpowiedź od Piotra...")
         print(f"📧 Email wysłany na {self.to_email}")
@@ -679,8 +728,8 @@ PS: Możesz też zadawać mi pytania w formacie konwersacyjnym - nie musisz uży
                 self.answered_questions[question_id] = question
                 del self.pending_questions[question_id]
                 
-                # Handle critical question unblocking
-                if question.priority == QuestionPriority.CRITICAL:
+                # Handle blocking question unblocking
+                if self._should_question_block_execution(question.priority):
                     self.is_blocked = False
                     self.blocking_question_id = None
                     

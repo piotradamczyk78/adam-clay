@@ -5,8 +5,8 @@ Handles communication between Python consciousness and Laravel dashboard
 
 import requests
 import json
-from datetime import datetime
-from typing import Dict, Any, Optional
+from datetime import datetime, timedelta
+from typing import Dict, Any, Optional, List
 from dataclasses import dataclass
 
 from loguru import logger
@@ -325,6 +325,202 @@ class LaravelApiClient:
         return any(keyword in content for keyword in significant_keywords) or \
                thought.thought_type == "business" or \
                len(thought.content) > 200
+    
+    async def get_thinking_status(self) -> Optional[Dict[str, Any]]:
+        """
+        🧠 Get thinking status from Laravel API (checks session status in database)
+        
+        Returns:
+            Dict containing thinking status or None if failed
+        """
+        try:
+            response = self.session.get(
+                f"{self.config.base_url}/consciousness/thinking-status",
+                timeout=self.config.timeout,
+                verify=self.config.verify_ssl
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                logger.debug(f"🧠 Thinking status checked: {data.get('thinking_status', {}).get('message', 'Unknown')}")
+                return data
+            else:
+                logger.warning(f"⚠️ Failed to get thinking status: {response.status_code}")
+                return None
+                
+        except Exception as e:
+            logger.error(f"❌ Error getting thinking status: {e}")
+            return None
+    
+    async def save_email_question(self, question_id: str, content: str, priority: str, 
+                                blocks_execution: bool, context: Dict[str, Any] = None) -> bool:
+        """
+        📧 Save email question to Laravel database
+        
+        Args:
+            question_id: Unique question identifier
+            content: Question content
+            priority: Question priority (CRITICAL, IMPORTANT, etc.)
+            blocks_execution: Whether this question blocks Adam's thinking
+            context: Additional context data
+            
+        Returns:
+            bool: Success status
+        """
+        try:
+            payload = {
+                "id": question_id,
+                "content": content,
+                "priority": priority,
+                "status": "pending",
+                "context": context or {},
+                "blocks_execution": blocks_execution,
+                "created_at": datetime.now().isoformat()
+            }
+            
+            response = self.session.post(
+                f"{self.config.base_url}/email-questions",
+                json=payload,
+                timeout=self.config.timeout,
+                verify=self.config.verify_ssl
+            )
+            
+            if response.status_code in [200, 201]:
+                logger.success(f"📧 Email question saved to database: {question_id}")
+                return True
+            else:
+                logger.error(f"❌ Failed to save email question: {response.status_code} - {response.text}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"❌ Error saving email question: {e}")
+            return False
+    
+    async def save_significant_memory(self, memory_text: str, category: str, importance_score: float, related_thought_id: Optional[int] = None) -> Optional[int]:
+        """
+        💾 Save significant memory to database
+        
+        Args:
+            memory_text: Text of the memory (max 2000 chars)
+            category: Category (business, learning, insight, strategy, error, success, other)
+            importance_score: Importance score 0.00-9.99
+            related_thought_id: Optional related thought ID
+            
+        Returns:
+            Memory ID if successful, None if failed
+        """
+        try:
+            data = {
+                'memory_text': memory_text[:2000],  # Ensure max length
+                'memory_date': datetime.now().date().isoformat(),
+                'category': category,
+                'importance_score': min(9.99, max(0.00, importance_score)),
+                'related_thought_id': related_thought_id
+            }
+            
+            response = self.session.post(
+                f"{self.config.base_url}/memories/significant",
+                json=data,
+                timeout=self.config.timeout,
+                verify=self.config.verify_ssl
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                if result.get('success'):
+                    memory_id = result.get('memory_id')
+                    logger.success(f"💾 Significant memory saved: {memory_id}")
+                    return memory_id
+            
+            logger.warning(f"⚠️ Failed to save significant memory: {response.status_code}")
+            return None
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to save significant memory: {e}")
+            return None
+    
+    async def get_significant_memories(self, limit: int = 20, category: Optional[str] = None, min_importance: float = 0.0) -> Optional[List[Dict]]:
+        """
+        🧠 Get significant memories from database
+        
+        Args:
+            limit: Maximum number of memories (1-50)
+            category: Filter by category (optional)
+            min_importance: Minimum importance score
+            
+        Returns:
+            List of memories or None if failed
+        """
+        try:
+            params = {
+                'limit': min(50, max(1, limit)),
+                'min_importance': min_importance
+            }
+            
+            if category:
+                params['category'] = category
+            
+            response = self.session.get(
+                f"{self.config.base_url}/memories/significant",
+                params=params,
+                timeout=self.config.timeout,
+                verify=self.config.verify_ssl
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                if result.get('success'):
+                    memories = result.get('memories', [])
+                    logger.debug(f"🧠 Retrieved {len(memories)} significant memories")
+                    return memories
+            
+            logger.warning(f"⚠️ Failed to get significant memories: {response.status_code}")
+            return None
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to get significant memories: {e}")
+            return None
+    
+    async def get_recent_thoughts_from_db(self, limit: int = 10, hours_back: int = 24) -> Optional[List[Dict]]:
+        """
+        💭 Get recent thoughts from database to avoid repetition
+        
+        Args:
+            limit: Maximum number of thoughts
+            hours_back: How many hours back to look
+            
+        Returns:
+            List of recent thoughts or None if failed
+        """
+        try:
+            # Calculate timestamp from hours back
+            since_time = (datetime.now() - timedelta(hours=hours_back)).isoformat()
+            
+            params = {
+                'limit': limit,
+                'since': since_time
+            }
+            
+            response = self.session.get(
+                f"{self.config.base_url}/thoughts/recent",
+                params=params,
+                timeout=self.config.timeout,
+                verify=self.config.verify_ssl
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                if result.get('success'):
+                    thoughts = result.get('thoughts', [])
+                    logger.debug(f"💭 Retrieved {len(thoughts)} recent thoughts")
+                    return thoughts
+            
+            logger.warning(f"⚠️ Failed to get recent thoughts: {response.status_code}")
+            return None
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to get recent thoughts: {e}")
+            return None
 
 
 # Global instance for easy access

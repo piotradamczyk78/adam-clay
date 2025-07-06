@@ -56,7 +56,7 @@ async def start_voice_session():
         from src.core.consciousness import ConsciousnessLoop
         from src.utils.logger import get_consciousness_logger
         from src.business.budget_manager import BudgetManager
-        import os
+        import os 
         
         # Initialize components
         config = load_config()

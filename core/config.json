@@ -29,7 +29,13 @@
       "smtp_port": 587,
       "imap_server": "imap.gmail.com",
       "imap_port": 993,
-      "check_interval": 60
+      "check_interval": 60,
+      "blocking_questions": {
+        "enabled": true,
+        "block_on_priorities": ["CRITICAL", "IMPORTANT"],
+        "block_all_questions": true,
+        "max_blocking_time_hours": 24
+      }
     },
     "slack": {
       "enabled": false,

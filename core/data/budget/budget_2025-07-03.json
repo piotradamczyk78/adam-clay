@@ -1,11 +1,11 @@
 {
   "date": "2025-07-03",
-  "total_requests": 41,
-  "total_cost": 0.9199920000000001,
+  "total_requests": 81,
+  "total_cost": 2.0780220000000003,
   "requests_by_type": {
-    "autonomous": 41
+    "autonomous": 81
   },
   "costs_by_type": {
-    "autonomous": 0.9199920000000001
+    "autonomous": 2.0780220000000003
   }
 }

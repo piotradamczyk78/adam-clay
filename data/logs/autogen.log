@@ -1,0 +1,275 @@
+[32m2025-07-06 00:20:38.503[0m | [1mINFO    [0m | [36mlogger[0m:[36msetup_loguru[0m:[36m66[0m | [1m🔧 System logowania skonfigurowany - poziom: INFO[0m
+[32m2025-07-06 00:20:38.504[0m | [1mINFO    [0m | [36mlogger[0m:[36msetup_loguru[0m:[36m67[0m | [1m📁 Logi zapisywane do: /Users/piotradamczyk/Projects/AdamClay/autogen/logs/autogen.log[0m
+[32m2025-07-06 00:20:38.635[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m350[0m | [1m🚀 Uruchamianie Adam Clay AutoGen Subconscious Service[0m
+INFO:     Will watch for changes in these directories: ['/Users/piotradamczyk/Projects/AdamClay/autogen']
+INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+INFO:     Started reloader process [1535] using StatReload
+[32m2025-07-06 00:20:39.358[0m | [1mINFO    [0m | [36mlogger[0m:[36msetup_loguru[0m:[36m66[0m | [1m🔧 System logowania skonfigurowany - poziom: INFO[0m
+[32m2025-07-06 00:20:39.358[0m | [1mINFO    [0m | [36mlogger[0m:[36msetup_loguru[0m:[36m67[0m | [1m📁 Logi zapisywane do: /Users/piotradamczyk/Projects/AdamClay/autogen/logs/autogen.log[0m
+INFO:     Started server process [1549]
+INFO:     Waiting for application startup.
+[32m2025-07-06 00:20:39.444[0m | [1mINFO    [0m | [36mmain[0m:[36mlifespan[0m:[36m38[0m | [1m🚀 Uruchamianie Adam Clay AutoGen Subconscious Service[0m
+[32m2025-07-06 00:20:39.444[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m🗄️  Inicjalizacja bazy danych...[0m
+2025-07-06 00:20:39,469 INFO sqlalchemy.engine.Engine SELECT DATABASE()
+[32m2025-07-06 00:20:39.469[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT DATABASE()[0m
+2025-07-06 00:20:39,469 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.469[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,472 INFO sqlalchemy.engine.Engine SELECT @@sql_mode
+[32m2025-07-06 00:20:39.472[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT @@sql_mode[0m
+2025-07-06 00:20:39,472 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.472[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,472 INFO sqlalchemy.engine.Engine SELECT @@lower_case_table_names
+[32m2025-07-06 00:20:39.472[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT @@lower_case_table_names[0m
+2025-07-06 00:20:39,472 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.472[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+[32m2025-07-06 00:20:39.473[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m✅ Połączenie z bazą danych nawiązane[0m
+2025-07-06 00:20:39,474 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:20:39.474[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:20:39,474 INFO sqlalchemy.engine.Engine DESCRIBE `adam_clay_autogen`.`subconscious_agents`
+[32m2025-07-06 00:20:39.474[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDESCRIBE `adam_clay_autogen`.`subconscious_agents`[0m
+2025-07-06 00:20:39,474 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.474[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,487 INFO sqlalchemy.engine.Engine DESCRIBE `adam_clay_autogen`.`agent_conversations`
+[32m2025-07-06 00:20:39.487[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDESCRIBE `adam_clay_autogen`.`agent_conversations`[0m
+2025-07-06 00:20:39,487 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.487[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,489 INFO sqlalchemy.engine.Engine DESCRIBE `adam_clay_autogen`.`agent_interactions`
+[32m2025-07-06 00:20:39.489[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDESCRIBE `adam_clay_autogen`.`agent_interactions`[0m
+2025-07-06 00:20:39,489 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.489[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,491 INFO sqlalchemy.engine.Engine DESCRIBE `adam_clay_autogen`.`agent_memory`
+[32m2025-07-06 00:20:39.491[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDESCRIBE `adam_clay_autogen`.`agent_memory`[0m
+2025-07-06 00:20:39,491 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.491[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,493 INFO sqlalchemy.engine.Engine DESCRIBE `adam_clay_autogen`.`system_events`
+[32m2025-07-06 00:20:39.493[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDESCRIBE `adam_clay_autogen`.`system_events`[0m
+2025-07-06 00:20:39,493 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.493[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,495 INFO sqlalchemy.engine.Engine DESCRIBE `adam_clay_autogen`.`agent_statistics`
+[32m2025-07-06 00:20:39.495[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDESCRIBE `adam_clay_autogen`.`agent_statistics`[0m
+2025-07-06 00:20:39,495 INFO sqlalchemy.engine.Engine [raw sql] {}
+[32m2025-07-06 00:20:39.495[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[raw sql] {}[0m
+2025-07-06 00:20:39,497 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:20:39.497[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+[32m2025-07-06 00:20:39.497[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m✅ Tabele bazy danych utworzone/zaktualizowane[0m
+/Users/piotradamczyk/Projects/AdamClay/autogen/database.py:53: SAWarning: relationship 'AgentInteraction.target_agent' will copy column subconscious_agents.id to column agent_interactions.target_agent_id, which conflicts with relationship(s): 'SubconsciousAgent.target_interactions' (copies subconscious_agents.id to agent_interactions.target_agent_id). If this is not the intention, consider if these relationships should be linked with back_populates, or if viewonly=True should be applied to one or more if they are read-only. For the less common case that foreign key constraints are partially overlapping, the orm.foreign() annotation can be used to isolate the columns that should be written towards.   To silence this warning, add the parameter 'overlaps="target_interactions"' to the 'AgentInteraction.target_agent' relationship. (Background on this warning at: https://sqlalche.me/e/20/qzyx) (This warning originated from the `configure_mappers()` process, which was invoked automatically in response to a user-initiated operation.)
+  agents_count = db.query(SubconsciousAgent).count()
+2025-07-06 00:20:39,503 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:20:39.503[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:20:39,506 INFO sqlalchemy.engine.Engine SELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1
+[32m2025-07-06 00:20:39.506[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1[0m
+2025-07-06 00:20:39,506 INFO sqlalchemy.engine.Engine [generated in 0.00013s] {}
+[32m2025-07-06 00:20:39.506[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[generated in 0.00013s] {}[0m
+[32m2025-07-06 00:20:39.518[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m📊 Liczba agentów w bazie: 8[0m
+2025-07-06 00:20:39,518 INFO sqlalchemy.engine.Engine ROLLBACK
+[32m2025-07-06 00:20:39.518[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mROLLBACK[0m
+2025-07-06 00:20:39,518 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:20:39.518[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:20:39,519 INFO sqlalchemy.engine.Engine SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents
+[32m2025-07-06 00:20:39.519[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents[0m
+2025-07-06 00:20:39,519 INFO sqlalchemy.engine.Engine [generated in 0.00008s] {}
+[32m2025-07-06 00:20:39.519[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[generated in 0.00008s] {}[0m
+[32m2025-07-06 00:20:39.526[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Analityk: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.3, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.526[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Analityk (ID: 1) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.530[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Kreatywny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.8, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.530[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Kreatywny (ID: 2) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.533[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Emocjonalny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.7, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.533[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Emocjonalny (ID: 3) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.536[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Strażnik: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.2, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.536[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Strażnik (ID: 4) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.539[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Społeczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.6, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.539[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Społeczny (ID: 5) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.542[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Pamięć: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.1, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.542[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Pamięć (ID: 6) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.545[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Strategiczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.4, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.545[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Strategiczny (ID: 7) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.548[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36msetup_autogen_agent[0m:[36m61[0m | [31m[1mBłąd konfiguracji agenta Intuicyjny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.9, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden[0m
+[32m2025-07-06 00:20:39.548[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Intuicyjny (ID: 8) - AKTIVATED[0m
+[32m2025-07-06 00:20:39.548[0m | [1mINFO    [0m | [36magent_manager[0m:[36mload_agents[0m:[36m242[0m | [1mZaładowano 8 agentów[0m
+[32m2025-07-06 00:20:39.548[0m | [31m[1mERROR   [0m | [36magent_manager[0m:[36m_setup_group_chat[0m:[36m284[0m | [31m[1mBłąd konfiguracji group chat: allowed_speaker_transitions_dict has values that are not lists of Agents.[0m
+2025-07-06 00:20:39,549 INFO sqlalchemy.engine.Engine ROLLBACK
+[32m2025-07-06 00:20:39.549[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mROLLBACK[0m
+[32m2025-07-06 00:20:39.549[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36mstart[0m:[36m42[0m | [1m🧠 Rozpoczynanie integracji z systemem świadomości Adam Clay[0m
+[32m2025-07-06 00:20:39.588[0m | [33m[1mWARNING [0m | [36mconsciousness_integration[0m:[36m_connect_to_consciousness[0m:[36m73[0m | [33m[1m⚠️ Problemy z API świadomości: 404[0m
+[32m2025-07-06 00:20:39.588[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}[0m
+[32m2025-07-06 00:20:49.592[0m | [33m[1mWARNING [0m | [36mconsciousness_integration[0m:[36m_connect_websocket[0m:[36m99[0m | [33m[1m⚠️ WebSocket timeout - kontynuuję bez WebSocket[0m
+[32m2025-07-06 00:20:49.592[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'reason': 'timeout'}[0m
+[32m2025-07-06 00:20:49.592[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36mstart[0m:[36m53[0m | [1m✅ Integracja z systemem świadomości uruchomiona[0m
+[32m2025-07-06 00:20:49.592[0m | [1mINFO    [0m | [36mmain[0m:[36mlifespan[0m:[36m57[0m | [1m✅ Serwis AutoGen uruchomiony pomyślnie[0m
+[32m2025-07-06 00:20:49.592[0m | [1mINFO    [0m | [36mmain[0m:[36mbackground_tasks[0m:[36m303[0m | [1m🔄 Uruchamianie zadań w tle[0m
+[32m2025-07-06 00:20:49.592[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36msync[0m:[36m335[0m | [1m🔄 Rozpoczynanie synchronizacji z systemem świadomości[0m
+2025-07-06 00:20:49,593 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:20:49.593[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:20:49,594 INFO sqlalchemy.engine.Engine SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents
+[32m2025-07-06 00:20:49.594[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents[0m
+2025-07-06 00:20:49,594 INFO sqlalchemy.engine.Engine [cached since 10.08s ago] {}
+[32m2025-07-06 00:20:49.594[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 10.08s ago] {}[0m
+INFO:     Application startup complete.
+[32m2025-07-06 00:20:49.627[0m | [33m[1mWARNING [0m | [36mconsciousness_integration[0m:[36msync_agent_states[0m:[36m284[0m | [33m[1m⚠️ Problemy z synchronizacją: 404[0m
+[32m2025-07-06 00:20:49.627[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}[0m
+2025-07-06 00:20:49,627 INFO sqlalchemy.engine.Engine ROLLBACK
+[32m2025-07-06 00:20:49.627[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mROLLBACK[0m
+[32m2025-07-06 00:20:49.640[0m | [33m[1mWARNING [0m | [36mconsciousness_integration[0m:[36m_connect_to_consciousness[0m:[36m73[0m | [33m[1m⚠️ Problemy z API świadomości: 404[0m
+[32m2025-07-06 00:20:49.640[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}[0m
+INFO:     127.0.0.1:49308 - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+[32m2025-07-06 00:20:49.642[0m | [33m[1mWARNING [0m | [36mconsciousness_integration[0m:[36m_connect_websocket[0m:[36m103[0m | [33m[1m⚠️ Nie udało się połączyć przez WebSocket: server rejected WebSocket connection: HTTP 403[0m
+[32m2025-07-06 00:20:49.642[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}[0m
+[32m2025-07-06 00:20:49.642[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36msync[0m:[36m345[0m | [1m✅ Synchronizacja zakończona pomyślnie[0m
+[32m2025-07-06 00:20:49.642[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m171[0m | [1m🧠 Integracja ze świadomością - FULL_SYNC - ✅ Sukces[0m
+2025-07-06 00:20:49,643 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:20:49.643[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:20:49,643 INFO sqlalchemy.engine.Engine DELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s
+[32m2025-07-06 00:20:49.643[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s[0m
+2025-07-06 00:20:49,644 INFO sqlalchemy.engine.Engine [generated in 0.00009s] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 20, 49, 642939)}
+[32m2025-07-06 00:20:49.644[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[generated in 0.00009s] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 20, 49, 642939)}[0m
+2025-07-06 00:20:49,648 INFO sqlalchemy.engine.Engine DELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s
+[32m2025-07-06 00:20:49.648[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s[0m
+2025-07-06 00:20:49,648 INFO sqlalchemy.engine.Engine [generated in 0.00010s] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 20, 49, 648371)}
+[32m2025-07-06 00:20:49.648[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[generated in 0.00010s] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 20, 49, 648371)}[0m
+2025-07-06 00:20:49,650 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:20:49.650[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+2025-07-06 00:20:49,651 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:20:49.651[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:20:49,651 INFO sqlalchemy.engine.Engine SELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1
+[32m2025-07-06 00:20:49.651[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1[0m
+2025-07-06 00:20:49,651 INFO sqlalchemy.engine.Engine [cached since 10.15s ago] {}
+[32m2025-07-06 00:20:49.651[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 10.15s ago] {}[0m
+2025-07-06 00:20:49,652 INFO sqlalchemy.engine.Engine ROLLBACK
+[32m2025-07-06 00:20:49.652[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mROLLBACK[0m
+[32m2025-07-06 00:20:49.652[0m | [31m[1mERROR   [0m | [36mmain[0m:[36mhealth_check[0m:[36m123[0m | [31m[1mHealth check failed: 'bool' object is not callable[0m
+INFO:     127.0.0.1:49290 - "GET /health HTTP/1.1" 503 Service Unavailable
+2025-07-06 00:21:49,652 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:21:49.652[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:21:49,652 INFO sqlalchemy.engine.Engine DELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s
+[32m2025-07-06 00:21:49.652[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s[0m
+2025-07-06 00:21:49,653 INFO sqlalchemy.engine.Engine [cached since 60.01s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 21, 49, 651895)}
+[32m2025-07-06 00:21:49.653[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 60.01s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 21, 49, 651895)}[0m
+2025-07-06 00:21:49,653 INFO sqlalchemy.engine.Engine DELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s
+[32m2025-07-06 00:21:49.653[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s[0m
+2025-07-06 00:21:49,653 INFO sqlalchemy.engine.Engine [cached since 60.01s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 21, 49, 653574)}
+[32m2025-07-06 00:21:49.653[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 60.01s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 21, 49, 653574)}[0m
+2025-07-06 00:21:49,654 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:21:49.654[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+2025-07-06 00:22:49,656 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:22:49.656[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:22:49,656 INFO sqlalchemy.engine.Engine DELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s
+[32m2025-07-06 00:22:49.657[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s[0m
+2025-07-06 00:22:49,657 INFO sqlalchemy.engine.Engine [cached since 120s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 22, 49, 655642)}
+[32m2025-07-06 00:22:49.657[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 120s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 22, 49, 655642)}[0m
+2025-07-06 00:22:49,657 INFO sqlalchemy.engine.Engine DELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s
+[32m2025-07-06 00:22:49.657[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s[0m
+2025-07-06 00:22:49,657 INFO sqlalchemy.engine.Engine [cached since 120s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 22, 49, 657581)}
+[32m2025-07-06 00:22:49.657[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 120s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 22, 49, 657581)}[0m
+2025-07-06 00:22:49,658 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:22:49.658[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+2025-07-06 00:23:49,660 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:23:49.660[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:23:49,660 INFO sqlalchemy.engine.Engine DELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s
+[32m2025-07-06 00:23:49.660[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s[0m
+2025-07-06 00:23:49,660 INFO sqlalchemy.engine.Engine [cached since 180s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 23, 49, 659655)}
+[32m2025-07-06 00:23:49.660[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 180s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 23, 49, 659655)}[0m
+2025-07-06 00:23:49,661 INFO sqlalchemy.engine.Engine DELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s
+[32m2025-07-06 00:23:49.661[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s[0m
+2025-07-06 00:23:49,661 INFO sqlalchemy.engine.Engine [cached since 180s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 23, 49, 661102)}
+[32m2025-07-06 00:23:49.661[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 180s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 23, 49, 661102)}[0m
+2025-07-06 00:23:49,661 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:23:49.661[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+2025-07-06 00:24:49,671 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:24:49.672[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:24:49,676 INFO sqlalchemy.engine.Engine DELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s
+[32m2025-07-06 00:24:49.676[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s[0m
+2025-07-06 00:24:49,678 INFO sqlalchemy.engine.Engine [cached since 240s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 24, 49, 666334)}
+[32m2025-07-06 00:24:49.678[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 240s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 24, 49, 666334)}[0m
+2025-07-06 00:24:49,688 INFO sqlalchemy.engine.Engine DELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s
+[32m2025-07-06 00:24:49.688[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s[0m
+2025-07-06 00:24:49,689 INFO sqlalchemy.engine.Engine [cached since 240s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 24, 49, 683354)}
+[32m2025-07-06 00:24:49.689[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 240s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 24, 49, 683354)}[0m
+2025-07-06 00:24:49,690 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:24:49.692[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+[32m2025-07-06 00:25:49.695[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36msync[0m:[36m335[0m | [1m🔄 Rozpoczynanie synchronizacji z systemem świadomości[0m
+2025-07-06 00:25:49,696 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:25:49.696[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:25:49,696 INFO sqlalchemy.engine.Engine SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents
+[32m2025-07-06 00:25:49.696[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mSELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents[0m
+2025-07-06 00:25:49,696 INFO sqlalchemy.engine.Engine [cached since 310.2s ago] {}
+[32m2025-07-06 00:25:49.696[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 310.2s ago] {}[0m
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32m2025-07-06 00:27:46.219[0m | [1mINFO    [0m | [36mmain[0m:[36mlifespan[0m:[36m62[0m | [1m🛑 Zamykanie serwisu AutoGen[0m
+[32m2025-07-06 00:27:46.220[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36mstop[0m:[36m371[0m | [1m🛑 Zatrzymywanie integracji z systemem świadomości[0m
+[32m2025-07-06 00:27:46.220[0m | [31m[1mERROR   [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [31m[1mDatabase session error: Server disconnected[0m
+2025-07-06 00:27:46,221 INFO sqlalchemy.engine.Engine ROLLBACK
+[32m2025-07-06 00:27:46.221[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mROLLBACK[0m
+[32m2025-07-06 00:27:46.222[0m | [31m[1mERROR   [0m | [36mconsciousness_integration[0m:[36msync_agent_states[0m:[36m288[0m | [31m[1m❌ Błąd synchronizacji stanów agentów: Server disconnected[0m
+[32m2025-07-06 00:27:46.222[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': 'Server disconnected'}[0m
+[32m2025-07-06 00:27:46.222[0m | [31m[1mERROR   [0m | [36mconsciousness_integration[0m:[36m_connect_to_consciousness[0m:[36m80[0m | [31m[1m❌ Błąd połączenia z systemem świadomości: Session is closed[0m
+[32m2025-07-06 00:27:46.222[0m | [31m[1mERROR   [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m173[0m | [31m[1m🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': 'Session is closed'}[0m
+[32m2025-07-06 00:27:46.222[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36msync[0m:[36m345[0m | [1m✅ Synchronizacja zakończona pomyślnie[0m
+[32m2025-07-06 00:27:46.222[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m171[0m | [1m🧠 Integracja ze świadomością - FULL_SYNC - ✅ Sukces[0m
+2025-07-06 00:27:46,222 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[32m2025-07-06 00:27:46.222[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mBEGIN (implicit)[0m
+2025-07-06 00:27:46,223 INFO sqlalchemy.engine.Engine DELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s
+[32m2025-07-06 00:27:46.223[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM agent_conversations WHERE agent_conversations.started_at < %(started_at_1)s[0m
+2025-07-06 00:27:46,223 INFO sqlalchemy.engine.Engine [cached since 416.6s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 27, 46, 222493)}
+[32m2025-07-06 00:27:46.223[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 416.6s ago] {'started_at_1': datetime.datetime(2025, 6, 6, 0, 27, 46, 222493)}[0m
+2025-07-06 00:27:46,223 INFO sqlalchemy.engine.Engine DELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s
+[32m2025-07-06 00:27:46.223[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mDELETE FROM system_events WHERE system_events.created_at < %(created_at_1)s[0m
+2025-07-06 00:27:46,223 INFO sqlalchemy.engine.Engine [cached since 416.6s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 27, 46, 223610)}
+[32m2025-07-06 00:27:46.223[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1m[cached since 416.6s ago] {'created_at_1': datetime.datetime(2025, 6, 29, 0, 27, 46, 223610)}[0m
+2025-07-06 00:27:46,224 INFO sqlalchemy.engine.Engine COMMIT
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogging[0m:[36mcallHandlers[0m:[36m1762[0m | [1mCOMMIT[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mconsciousness_integration[0m:[36mstop[0m:[36m384[0m | [1m✅ Integracja zatrzymana[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_consciousness_integration[0m:[36m171[0m | [1m🧠 Integracja ze świadomością - STOP - ✅ Sukces[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Analityk (ID: 1) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Kreatywny (ID: 2) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Emocjonalny (ID: 3) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Strażnik (ID: 4) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Społeczny (ID: 5) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Pamięć (ID: 6) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Strategiczny (ID: 7) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36mlogger[0m:[36mlog_agent_activity[0m:[36m151[0m | [1m🤖 Agent Intuicyjny (ID: 8) - DEACTIVATED[0m
+[32m2025-07-06 00:27:46.224[0m | [1mINFO    [0m | [36magent_manager[0m:[36mshutdown[0m:[36m488[0m | [1mWszyscy agenci zostali wyłączeni[0m
+[32m2025-07-06 00:27:46.225[0m | [1mINFO    [0m | [36mmain[0m:[36mlifespan[0m:[36m70[0m | [1m✅ Serwis AutoGen zamknięty pomyślnie[0m
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1549]
+INFO:     Stopping reloader process [1535]

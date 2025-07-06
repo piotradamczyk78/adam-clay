@@ -1,0 +1,282 @@
+2025-07-05 14:55:38.277 | ERROR    | logging:callHandlers:1762 | ❌ Błąd podczas inicjalizacji bazy danych: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 14:55:38.277 | ERROR    | __main__:create_initial_agents:353 | ❌ Błąd tworzenia agentów: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 14:55:38.277 | ERROR    | __main__:main:376 | ❌ Błąd krytyczny: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:43:43.010 | ERROR    | logging:callHandlers:1762 | ❌ Błąd podczas inicjalizacji bazy danych: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:43:43.010 | ERROR    | __main__:create_initial_agents:353 | ❌ Błąd tworzenia agentów: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:43:43.010 | ERROR    | __main__:main:376 | ❌ Błąd krytyczny: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:45:13.208 | ERROR    | logging:callHandlers:1762 | ❌ Błąd podczas inicjalizacji bazy danych: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:45:13.208 | ERROR    | __main__:create_initial_agents:353 | ❌ Błąd tworzenia agentów: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:45:13.208 | ERROR    | __main__:main:376 | ❌ Błąd krytyczny: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:52:57.534 | ERROR    | logging:callHandlers:1762 | ❌ Błąd podczas inicjalizacji bazy danych: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:52:57.534 | ERROR    | __main__:create_initial_agents:353 | ❌ Błąd tworzenia agentów: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 15:52:57.534 | ERROR    | __main__:main:376 | ❌ Błąd krytyczny: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 21:16:31.198 | ERROR    | logging:callHandlers:1762 | Database session error: Could not determine join condition between parent/child tables on relationship SubconsciousAgent.interactions - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-07-05 21:16:31.199 | ERROR    | logging:callHandlers:1762 | ❌ Błąd podczas inicjalizacji bazy danych: Could not determine join condition between parent/child tables on relationship SubconsciousAgent.interactions - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-07-05 21:16:31.199 | ERROR    | __main__:create_initial_agents:353 | ❌ Błąd tworzenia agentów: Could not determine join condition between parent/child tables on relationship SubconsciousAgent.interactions - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-07-05 21:16:31.199 | ERROR    | __main__:main:376 | ❌ Błąd krytyczny: Could not determine join condition between parent/child tables on relationship SubconsciousAgent.interactions - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-07-05 21:17:05.079 | ERROR    | logging:callHandlers:1762 | Database session error: (pymysql.err.OperationalError) (1054, "Unknown column 'subconscious_agents.status' in 'field list'")
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 21:17:05.079 | ERROR    | logging:callHandlers:1762 | ❌ Błąd podczas inicjalizacji bazy danych: (pymysql.err.OperationalError) (1054, "Unknown column 'subconscious_agents.status' in 'field list'")
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 21:17:05.079 | ERROR    | __main__:create_initial_agents:353 | ❌ Błąd tworzenia agentów: (pymysql.err.OperationalError) (1054, "Unknown column 'subconscious_agents.status' in 'field list'")
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 21:17:05.079 | ERROR    | __main__:main:376 | ❌ Błąd krytyczny: (pymysql.err.OperationalError) (1054, "Unknown column 'subconscious_agents.status' in 'field list'")
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT subconscious_agents.id AS subconscious_agents_id, subconscious_agents.name AS subconscious_agents_name, subconscious_agents.agent_type AS subconscious_agents_agent_type, subconscious_agents.status AS subconscious_agents_status, subconscious_agents.description AS subconscious_agents_description, subconscious_agents.personality_traits AS subconscious_agents_personality_traits, subconscious_agents.skills AS subconscious_agents_skills, subconscious_agents.responsibilities AS subconscious_agents_responsibilities, subconscious_agents.system_prompt AS subconscious_agents_system_prompt, subconscious_agents.model_config AS subconscious_agents_model_config, subconscious_agents.activation_threshold AS subconscious_agents_activation_threshold, subconscious_agents.current_activity_level AS subconscious_agents_current_activity_level, subconscious_agents.priority_level AS subconscious_agents_priority_level, subconscious_agents.consciousness_integration AS subconscious_agents_consciousness_integration, subconscious_agents.created_at AS subconscious_agents_created_at, subconscious_agents.updated_at AS subconscious_agents_updated_at, subconscious_agents.last_active_at AS subconscious_agents_last_active_at 
+FROM subconscious_agents) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-05 21:56:48.682 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Analityk: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.3, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.686 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Kreatywny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.8, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.689 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Emocjonalny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.7, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.692 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strażnik: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.2, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.696 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Społeczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.6, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.700 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Pamięć: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.1, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.703 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strategiczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.4, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.707 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Intuicyjny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.9, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 21:56:48.707 | ERROR    | agent_manager:_setup_group_chat:284 | Błąd konfiguracji group chat: allowed_speaker_transitions_dict has values that are not lists of Agents.
+2025-07-05 21:56:48.709 | ERROR    | consciousness_integration:_connect_to_consciousness:80 | ❌ Błąd połączenia z systemem świadomości: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]
+2025-07-05 21:56:48.709 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': "Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]"}
+2025-07-05 21:56:48.712 | ERROR    | logging:callHandlers:1762 | Database session error: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]
+2025-07-05 21:56:48.713 | ERROR    | consciousness_integration:sync_agent_states:288 | ❌ Błąd synchronizacji stanów agentów: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]
+2025-07-05 21:56:48.713 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': "Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]"}
+2025-07-05 21:56:48.714 | ERROR    | consciousness_integration:_connect_to_consciousness:80 | ❌ Błąd połączenia z systemem świadomości: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8004, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8004)]
+2025-07-05 21:56:48.714 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': "Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8004, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8004)]"}
+2025-07-05 22:01:48.751 | ERROR    | logging:callHandlers:1762 | Database session error: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]
+2025-07-05 22:01:48.752 | ERROR    | consciousness_integration:sync_agent_states:288 | ❌ Błąd synchronizacji stanów agentów: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]
+2025-07-05 22:01:48.752 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': "Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 8004), [Errno 61] Connect call failed ('::1', 8004, 0, 0)]"}
+2025-07-05 22:01:48.753 | ERROR    | consciousness_integration:_connect_to_consciousness:80 | ❌ Błąd połączenia z systemem świadomości: Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8004, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8004)]
+2025-07-05 22:01:48.753 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': "Cannot connect to host localhost:8004 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8004, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8004)]"}
+2025-07-05 22:06:48.836 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:06:48.850 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:06:48.861 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:11:48.921 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:11:48.936 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:11:48.938 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:16:48.982 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:16:49.001 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:16:49.003 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:21:49.048 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:21:49.062 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:21:49.065 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:26:49.182 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:26:49.209 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:26:49.214 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:31:49.250 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:31:49.264 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:31:49.267 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:36:49.319 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:36:49.338 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-05 22:36:49.341 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-05 22:46:49.463 | ERROR    | logging:callHandlers:1762 | Database session error: 
+2025-07-05 22:46:49.463 | ERROR    | consciousness_integration:sync_agent_states:288 | ❌ Błąd synchronizacji stanów agentów: 
+2025-07-05 22:46:49.464 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': ''}
+2025-07-05 22:51:50.423 | ERROR    | consciousness_integration:_connect_to_consciousness:80 | ❌ Błąd połączenia z systemem świadomości: 
+2025-07-05 22:51:50.423 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': ''}
+2025-07-05 23:01:51.421 | ERROR    | logging:callHandlers:1762 | Database session error: 
+2025-07-05 23:01:51.424 | ERROR    | consciousness_integration:sync_agent_states:288 | ❌ Błąd synchronizacji stanów agentów: 
+2025-07-05 23:01:51.424 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': ''}
+2025-07-05 23:06:52.420 | ERROR    | consciousness_integration:_connect_to_consciousness:80 | ❌ Błąd połączenia z systemem świadomości: 
+2025-07-05 23:06:52.421 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': ''}
+2025-07-05 23:16:53.446 | ERROR    | logging:callHandlers:1762 | Database session error: 
+2025-07-05 23:16:53.447 | ERROR    | consciousness_integration:sync_agent_states:288 | ❌ Błąd synchronizacji stanów agentów: 
+2025-07-05 23:16:53.447 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': ''}
+2025-07-05 23:21:01.280 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Analityk: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.3, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.283 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Kreatywny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.8, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.287 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Emocjonalny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.7, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.290 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strażnik: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.2, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.293 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Społeczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.6, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.296 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Pamięć: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.1, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.300 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strategiczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.4, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.303 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Intuicyjny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.9, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-05 23:21:01.303 | ERROR    | agent_manager:_setup_group_chat:284 | Błąd konfiguracji group chat: allowed_speaker_transitions_dict has values that are not lists of Agents.
+2025-07-06 00:07:12.849 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Analityk: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.3, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.853 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Kreatywny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.8, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.856 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Emocjonalny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.7, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.859 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strażnik: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.2, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.863 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Społeczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.6, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.866 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Pamięć: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.1, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.870 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strategiczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.4, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.873 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Intuicyjny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.9, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:07:12.873 | ERROR    | agent_manager:_setup_group_chat:284 | Błąd konfiguracji group chat: allowed_speaker_transitions_dict has values that are not lists of Agents.
+2025-07-06 00:07:12.904 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:07:20.696 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': "Multiple exceptions: [Errno 60] Connect call failed ('127.0.0.1', 8005), [Errno 61] Connect call failed ('::1', 8005, 0, 0)"}
+2025-07-06 00:07:20.714 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:07:20.740 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:07:20.743 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-06 00:07:21.948 | ERROR    | main:health_check:123 | Health check failed: 'bool' object is not callable
+2025-07-06 00:15:07.407 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Analityk: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.3, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.410 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Kreatywny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.8, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.414 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Emocjonalny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.7, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.417 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strażnik: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.2, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.421 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Społeczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.6, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.424 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Pamięć: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.1, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.427 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strategiczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.4, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.431 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Intuicyjny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.9, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:15:07.431 | ERROR    | agent_manager:_setup_group_chat:284 | Błąd konfiguracji group chat: allowed_speaker_transitions_dict has values that are not lists of Agents.
+2025-07-06 00:15:07.462 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:15:15.249 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': "Multiple exceptions: [Errno 60] Connect call failed ('127.0.0.1', 8005), [Errno 61] Connect call failed ('::1', 8005, 0, 0)"}
+2025-07-06 00:15:15.267 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:15:15.292 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:15:15.295 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-06 00:15:15.673 | ERROR    | main:health_check:123 | Health check failed: 'bool' object is not callable
+2025-07-06 00:20:39.526 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Analityk: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.3, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.530 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Kreatywny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.8, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.533 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Emocjonalny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.7, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.536 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strażnik: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.2, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.539 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Społeczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.6, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.542 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Pamięć: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.1, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.545 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Strategiczny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.4, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.548 | ERROR    | agent_manager:setup_autogen_agent:61 | Błąd konfiguracji agenta Intuicyjny: 1 validation error for _LLMConfig
+config_list.0.openai.temperature
+  Extra inputs are not permitted [type=extra_forbidden, input_value=0.9, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-07-06 00:20:39.548 | ERROR    | agent_manager:_setup_group_chat:284 | Błąd konfiguracji group chat: allowed_speaker_transitions_dict has values that are not lists of Agents.
+2025-07-06 00:20:39.588 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:20:49.592 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'reason': 'timeout'}
+2025-07-06 00:20:49.627 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:20:49.640 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_REST - ❌ Błąd | {'status_code': 404}
+2025-07-06 00:20:49.642 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT_WS - ❌ Błąd | {'error': 'server rejected WebSocket connection: HTTP 403'}
+2025-07-06 00:20:49.652 | ERROR    | main:health_check:123 | Health check failed: 'bool' object is not callable
+2025-07-06 00:27:46.220 | ERROR    | logging:callHandlers:1762 | Database session error: Server disconnected
+2025-07-06 00:27:46.222 | ERROR    | consciousness_integration:sync_agent_states:288 | ❌ Błąd synchronizacji stanów agentów: Server disconnected
+2025-07-06 00:27:46.222 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - SYNC_AGENTS - ❌ Błąd | {'error': 'Server disconnected'}
+2025-07-06 00:27:46.222 | ERROR    | consciousness_integration:_connect_to_consciousness:80 | ❌ Błąd połączenia z systemem świadomości: Session is closed
+2025-07-06 00:27:46.222 | ERROR    | logger:log_consciousness_integration:173 | 🧠 Integracja ze świadomością - CONNECT - ❌ Błąd | {'error': 'Session is closed'}

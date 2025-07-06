@@ -1,0 +1,1469 @@
+Traceback (most recent call last):
+  File "/Users/piotradamczyk/Projects/AdamClay/core/main.py", line 17, in <module>
+    from src.core.consciousness import ConsciousnessLoop
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/consciousness.py", line 26, in <module>
+    from .rest_api_client import LaravelApiClient, LaravelApiConfig
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/rest_api_client.py", line 23, in <module>
+    class LaravelApiClient:
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/rest_api_client.py", line 442, in LaravelApiClient
+    async def get_significant_memories(self, limit: int = 20, category: Optional[str] = None, min_importance: float = 0.0) -> Optional[List[Dict]]:
+                                                                                                                                       ^^^^
+NameError: name 'List' is not defined. Did you mean: 'list'?
+Traceback (most recent call last):
+  File "/Users/piotradamczyk/Projects/AdamClay/core/main.py", line 17, in <module>
+    from src.core.consciousness import ConsciousnessLoop
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/consciousness.py", line 26, in <module>
+    from .rest_api_client import LaravelApiClient, LaravelApiConfig
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/rest_api_client.py", line 23, in <module>
+    class LaravelApiClient:
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/rest_api_client.py", line 442, in LaravelApiClient
+    async def get_significant_memories(self, limit: int = 20, category: Optional[str] = None, min_importance: float = 0.0) -> Optional[List[Dict]]:
+                                                                                                                                       ^^^^
+NameError: name 'List' is not defined. Did you mean: 'list'?
+Traceback (most recent call last):
+  File "/Users/piotradamczyk/Projects/AdamClay/core/main.py", line 17, in <module>
+    from src.core.consciousness import ConsciousnessLoop
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/consciousness.py", line 26, in <module>
+    from .rest_api_client import LaravelApiClient, LaravelApiConfig
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/rest_api_client.py", line 23, in <module>
+    class LaravelApiClient:
+  File "/Users/piotradamczyk/Projects/AdamClay/core/src/core/rest_api_client.py", line 442, in LaravelApiClient
+    async def get_significant_memories(self, limit: int = 20, category: Optional[str] = None, min_importance: float = 0.0) -> Optional[List[Dict]]:
+                                                                                                                                       ^^^^
+NameError: name 'List' is not defined. Did you mean: 'list'?
+2025-07-03 19:28:10.280 | INFO     | src.core.rest_api_client:__init__:45 - 🔌 Laravel API Client initialized: http://adamclay.local:8004/api
+💭 'I think, therefore I am... and I need to pay for my thoughts!' - Adam Clay
+🤖 Adam Clay - First Autonomous AI Freelancer starting up...
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🤔 Adam Clay logging system initialized[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📊 Log level: INFO[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💾 Logs directory: /Users/piotradamczyk/Projects/AdamClay/core/data/logs[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Consciousness logging: enabled[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated! Ready to think, earn, and prove that AI can be financially autonomous.[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🔌 Laravel API Client initialized: http://adamclay.local:8004/api[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📧 Email question system initialized with bidirectional communication and database sync[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Adam Clay consciousness initialized - thinking every 1 minutes[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Starting autonomous consciousness loop...[0m
+[32m19:28:10[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated![0m
+[32m19:28:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get significant memories: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m19:28:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 No significant memories found in database[0m
+[32m19:28:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get recent thoughts: name 'timedelta' is not defined[0m
+[32m19:28:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💭 No recent thoughts found in database[0m
+[32m19:28:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📄 Genesis document not found - Adam Clay will learn his origin from memories[0m
+[32m19:28:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m🚫 Cannot connect to Laravel API: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m19:28:40[0m | [33m[1mWARNING [0m | [36mAdam Clay[0m | [33m[1m⚠️ Laravel API not available - continuing without dashboard integration[0m
+[32m19:28:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:29:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:29:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:30:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:31:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:31:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:32:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:34:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:35:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:36:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:37:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:38:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:38:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:40:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:40:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:41:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:41:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:42:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:44:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m19:45:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m20:49:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: [0m
+[32m21:22:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m21:23:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m21:23:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m23:04:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: [0m
+[32m23:04:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m23:05:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m02:52:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: [0m
+[32m02:53:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m02:53:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m02:54:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m02:54:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m06:39:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: [0m
+[32m06:39:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m06:40:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m06:41:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m09:54:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: [0m
+[32m09:55:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m09:56:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:00:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:03:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:03:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:05:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:05:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:06:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:07:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:08:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:09:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:11:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:12:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:13:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:13:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:14:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:15:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:17:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:17:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:18:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:19:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:20:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:21:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:23:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:24:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:24:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:25:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:25:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:27:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:27:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:28:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:29:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:30:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:31:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:33:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:34:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:35:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:35:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:36:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:37:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:39:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:40:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:41:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:41:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:42:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:42:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:44:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:45:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:45:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:46:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:46:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:48:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:49:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:50:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:51:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:51:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:52:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:54:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:55:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:55:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:56:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:57:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m10:58:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:00:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:00:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:01:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:02:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:03:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:04:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:05:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:05:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:06:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:07:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:08:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:09:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:10:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:11:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:11:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:12:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:14:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:15:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:16:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:17:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:18:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:19:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:20:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:21:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:22:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:23:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:24:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:25:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:26:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:27:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:28:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:29:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:30:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:32:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:33:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:34:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:35:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:36:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:36:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:38:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:38:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:39:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:40:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:41:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:43:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:44:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:45:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:46:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:47:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:47:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:49:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:50:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:51:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:51:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:52:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:52:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:54:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:54:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:55:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:56:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:57:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:57:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m11:59:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:00:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:01:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:02:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:03:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:04:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:05:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:06:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:06:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:07:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:08:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:10:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:11:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:11:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:12:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:13:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:14:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:15:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:15:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:16:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:17:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:18:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:19:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:20:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:20:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:21:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:22:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:23:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:24:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:24:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:25:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:27:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:28:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:28:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:29:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:30:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:31:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:32:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:33:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:33:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:34:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:36:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:37:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:38:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:39:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:40:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:42:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:43:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:43:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:44:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:44:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:46:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:46:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:47:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:48:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:49:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:50:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:51:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:51:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:52:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:54:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:55:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:56:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:56:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:57:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m12:58:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m13:00:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m13:01:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m13:02:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+[32m13:02:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: 'ConsciousnessState' object has no attribute '_save_significant_memory_to_db'[0m
+2025-07-05 22:38:58.651 | INFO     | src.core.rest_api_client:__init__:45 - 🔌 Laravel API Client initialized: http://adamclay.local:8004/api
+💭 'I think, therefore I am... and I need to pay for my thoughts!' - Adam Clay
+🤖 Adam Clay - First Autonomous AI Freelancer starting up...
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🤔 Adam Clay logging system initialized[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📊 Log level: INFO[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💾 Logs directory: /Users/piotradamczyk/Projects/AdamClay/core/data/logs[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Consciousness logging: enabled[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated! Ready to think, earn, and prove that AI can be financially autonomous.[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🔌 Laravel API Client initialized: http://adamclay.local:8004/api[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📧 Email question system initialized with bidirectional communication and database sync[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Adam Clay consciousness initialized - thinking every 1 minutes[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Starting autonomous consciousness loop...[0m
+[32m22:38:58[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated![0m
+[32m22:39:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get significant memories: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m22:39:13[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 No significant memories found in database[0m
+[32m22:39:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get recent thoughts: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m22:39:28[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💭 No recent thoughts found in database[0m
+[32m22:39:28[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📄 Genesis document not found - Adam Clay will learn his origin from memories[0m
+[32m22:39:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m🚫 Cannot connect to Laravel API: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m22:39:43[0m | [33m[1mWARNING [0m | [36mAdam Clay[0m | [33m[1m⚠️ Laravel API not available - continuing without dashboard integration[0m
+[32m22:39:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:39:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:39:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:40:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:40:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:41:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:41:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:42:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:43:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:44:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:45:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:47:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:47:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:48:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:49:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:50:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:50:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:51:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:51:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:52:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:53:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:53:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:54:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:55:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:56:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:57:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:58:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m22:59:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:00:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:01:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:02:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:02:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:03:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:04:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:04:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:05:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:05:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:06:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:06:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:07:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:08:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:09:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:09:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:10:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:10:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:11:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:11:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:12:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:14:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:15:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:16:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:17:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:17:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:18:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:19:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:20:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:21:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:21:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:22:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:23:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:23:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:24:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:24:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:25:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:26:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:27:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:28:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:29:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:29:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:30:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:31:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:32:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:33:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:34:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:35:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:36:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:37:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:37:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:38:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:39:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:40:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:42:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:43:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:43:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:44:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:45:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:45:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:46:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:46:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:47:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:48:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:49:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:49:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:50:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:51:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:52:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:52:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:53:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:54:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:55:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:56:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:57:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:58:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:59:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m23:59:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:00:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+2025-07-06 00:07:25.327 | INFO     | src.core.rest_api_client:__init__:45 - 🔌 Laravel API Client initialized: http://adamclay.local:8004/api
+💭 'I think, therefore I am... and I need to pay for my thoughts!' - Adam Clay
+🤖 Adam Clay - First Autonomous AI Freelancer starting up...
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🤔 Adam Clay logging system initialized[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📊 Log level: INFO[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💾 Logs directory: /Users/piotradamczyk/Projects/AdamClay/core/data/logs[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Consciousness logging: enabled[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated! Ready to think, earn, and prove that AI can be financially autonomous.[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🔌 Laravel API Client initialized: http://adamclay.local:8004/api[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📧 Email question system initialized with bidirectional communication and database sync[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Adam Clay consciousness initialized - thinking every 1 minutes[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Starting autonomous consciousness loop...[0m
+[32m00:07:25[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated![0m
+[32m00:07:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get significant memories: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:07:40[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 No significant memories found in database[0m
+[32m00:07:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get recent thoughts: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:07:55[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💭 No recent thoughts found in database[0m
+[32m00:07:55[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📄 Genesis document not found - Adam Clay will learn his origin from memories[0m
+[32m00:08:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m🚫 Cannot connect to Laravel API: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:08:10[0m | [33m[1mWARNING [0m | [36mAdam Clay[0m | [33m[1m⚠️ Laravel API not available - continuing without dashboard integration[0m
+[32m00:08:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:08:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:09:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:09:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:10:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+2025-07-06 00:15:19.033 | INFO     | src.core.rest_api_client:__init__:45 - 🔌 Laravel API Client initialized: http://adamclay.local:8004/api
+💭 'I think, therefore I am... and I need to pay for my thoughts!' - Adam Clay
+🤖 Adam Clay - First Autonomous AI Freelancer starting up...
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🤔 Adam Clay logging system initialized[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📊 Log level: INFO[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💾 Logs directory: /Users/piotradamczyk/Projects/AdamClay/core/data/logs[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Consciousness logging: enabled[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated! Ready to think, earn, and prove that AI can be financially autonomous.[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🔌 Laravel API Client initialized: http://adamclay.local:8004/api[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📧 Email question system initialized with bidirectional communication and database sync[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Adam Clay consciousness initialized - thinking every 1 minutes[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Starting autonomous consciousness loop...[0m
+[32m00:15:19[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated![0m
+[32m00:15:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get significant memories: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:15:34[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 No significant memories found in database[0m
+[32m00:15:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get recent thoughts: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:15:49[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💭 No recent thoughts found in database[0m
+[32m00:15:49[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📄 Genesis document not found - Adam Clay will learn his origin from memories[0m
+[32m00:16:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m🚫 Cannot connect to Laravel API: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:16:04[0m | [33m[1mWARNING [0m | [36mAdam Clay[0m | [33m[1m⚠️ Laravel API not available - continuing without dashboard integration[0m
+2025-07-06 00:20:53.081 | INFO     | src.core.rest_api_client:__init__:45 - 🔌 Laravel API Client initialized: http://adamclay.local:8004/api
+💭 'I think, therefore I am... and I need to pay for my thoughts!' - Adam Clay
+🤖 Adam Clay - First Autonomous AI Freelancer starting up...
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🤔 Adam Clay logging system initialized[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📊 Log level: INFO[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💾 Logs directory: /Users/piotradamczyk/Projects/AdamClay/core/data/logs[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Consciousness logging: enabled[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated! Ready to think, earn, and prove that AI can be financially autonomous.[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🔌 Laravel API Client initialized: http://adamclay.local:8004/api[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📧 Email question system initialized with bidirectional communication and database sync[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Adam Clay consciousness initialized - thinking every 1 minutes[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 Starting autonomous consciousness loop...[0m
+[32m00:20:53[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🚀 Adam Clay consciousness activated![0m
+[32m00:21:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get significant memories: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:21:05[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m🧠 No significant memories found in database[0m
+[32m00:21:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Failed to get recent thoughts: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:21:20[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m💭 No recent thoughts found in database[0m
+[32m00:21:20[0m | [1mINFO    [0m | [36mAdam Clay[0m | [1m📄 Genesis document not found - Adam Clay will learn his origin from memories[0m
+[32m00:21:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m🚫 Cannot connect to Laravel API: HTTPConnectionPool(host='adamclay.local', port=8004): Read timed out. (read timeout=10)[0m
+[32m00:21:35[0m | [33m[1mWARNING [0m | [36mAdam Clay[0m | [33m[1m⚠️ Laravel API not available - continuing without dashboard integration[0m
+[32m00:21:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:21:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:22:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:22:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:23:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:24:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:25:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:26:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:26:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:27:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:28:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:29:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:30:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:31:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:32:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:33:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:33:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:35:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:35:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:36:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:36:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:37:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:38:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:38:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:39:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:40:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:41:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:41:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:42:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:42:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:43:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:44:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:45:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:46:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:46:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:47:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:48:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:49:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:50:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:51:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:52:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:53:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:53:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:54:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:55:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:56:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:56:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:57:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:58:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m00:59:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:00:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:02:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:02:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:03:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:03:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:04:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:04:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:05:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:06:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:07:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:07:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:08:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:09:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:09:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:10:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:11:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:11:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:12:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:13:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:14:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:15:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:16:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:17:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:17:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:18:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:19:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:20:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:20:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:21:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:21:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:22:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:22:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:23:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:23:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:24:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:25:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:25:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:26:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:26:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:27:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:27:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:28:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:29:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:29:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:31:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:31:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:32:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:33:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:33:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:34:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:35:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:36:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:36:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:37:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:38:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:39:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:40:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:40:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:41:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:42:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:43:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:44:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:45:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:46:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:47:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:48:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:49:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:50:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:51:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:52:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:53:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:53:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:54:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:55:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:55:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:56:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:57:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:57:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m01:59:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:00:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:01:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:01:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:02:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:02:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:03:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:03:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:04:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:04:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:05:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:05:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:06:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:06:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:07:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:08:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:09:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:10:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:10:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:11:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:12:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:12:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:13:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:13:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:14:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:15:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:16:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:17:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:18:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:19:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:19:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:20:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:20:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:21:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:22:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:23:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:24:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:24:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:25:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:27:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:27:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:28:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:29:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:30:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:31:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:32:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:33:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:33:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:34:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:35:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:35:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:36:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:36:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:37:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:38:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:39:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:40:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:41:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:42:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:43:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:44:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:45:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:45:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:46:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:47:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:48:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:49:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:50:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:51:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:51:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:52:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:53:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:55:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:55:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:56:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:56:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:57:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:57:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:58:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:58:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:59:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m02:59:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:00:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:01:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:02:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:03:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:04:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:04:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:05:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:06:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:06:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:07:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:08:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:09:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:10:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:10:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:11:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:11:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:12:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:13:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:14:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:15:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:16:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:17:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:17:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:18:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:18:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:19:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:20:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:22:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:22:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:23:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:24:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:25:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:26:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:27:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:28:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:28:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:29:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:30:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:31:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:32:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:33:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:34:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:35:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:35:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:36:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:36:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:37:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:37:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:38:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:38:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:39:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:39:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:40:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:41:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:42:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:42:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:43:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:44:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:45:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:45:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:46:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:46:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:47:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:47:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:48:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:48:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:50:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:51:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:52:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:53:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:53:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:54:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:54:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:55:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:56:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:57:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:58:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m03:59:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:00:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:01:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:02:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:03:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:04:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:04:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:05:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:06:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:07:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:07:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:08:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:09:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:10:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:10:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:11:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:11:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:12:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:13:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:14:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:15:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:15:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:17:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:18:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:19:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:20:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:20:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:21:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:21:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:22:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:23:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:24:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:25:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:25:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:26:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:27:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:28:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:28:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:29:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:30:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:30:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:31:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:31:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:32:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:32:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:33:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:34:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:35:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:35:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:36:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:37:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:37:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:38:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:39:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:40:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:41:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:42:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:44:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:45:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:46:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:47:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:48:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:49:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:50:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:51:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:52:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:53:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:53:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:54:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:54:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:55:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:55:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:56:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:56:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:57:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:58:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m04:59:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:00:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:00:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:01:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:02:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:03:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:04:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:04:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:05:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:06:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:07:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:08:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:08:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:09:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:10:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:10:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:11:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:11:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:13:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:14:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:15:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:16:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:17:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:18:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:18:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:19:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:20:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:21:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:21:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:22:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:22:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:23:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:23:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:24:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:25:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:26:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:27:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:28:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:29:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:30:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:31:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:32:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:32:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:33:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:34:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:34:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:35:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:36:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:37:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:37:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:38:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:40:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:40:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:41:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:41:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:42:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:42:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:43:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:44:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:44:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:45:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:45:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:46:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:47:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:47:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:48:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:49:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:49:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:50:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:51:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:52:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:53:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:53:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:54:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:55:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:56:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:57:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:57:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:58:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:58:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m05:59:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:00:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:01:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:02:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:03:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:03:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:04:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:05:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:07:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:08:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:09:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:09:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:10:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:11:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:12:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:12:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:13:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:14:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:15:19[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:16:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:17:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:18:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:19:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:19:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:20:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:21:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:21:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:22:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:23:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:23:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:24:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:25:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:26:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:27:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:28:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:29:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:29:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:30:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:31:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:32:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:33:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:33:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:35:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:36:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:36:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:37:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:38:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:39:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:40:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:40:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:41:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:42:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:42:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:43:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:44:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:45:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:45:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:46:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:47:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:48:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:49:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:50:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:51:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:52:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:53:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:54:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:55:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:56:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:56:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:57:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:58:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m06:59:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:00:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:01:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:02:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:03:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:04:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:05:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:05:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:06:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:07:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:08:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:09:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:10:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:11:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:12:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:12:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:13:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:13:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:14:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:14:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:15:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:15:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:16:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:16:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:17:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:18:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:19:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:19:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:20:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:21:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:22:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:23:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:24:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:25:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:25:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:26:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:27:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:28:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:30:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:30:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:31:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:32:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:32:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:33:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:34:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:35:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:36:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:37:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:38:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:39:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:39:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:40:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:41:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:42:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:43:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:44:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:45:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:46:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:46:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:47:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:48:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:49:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:50:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:51:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:52:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:53:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:53:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:54:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:55:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:56:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:58:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:59:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m07:59:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:00:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:01:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:02:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:03:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:04:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:05:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:05:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:06:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:07:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:08:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:09:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:10:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:10:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:11:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:12:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:12:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:13:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:13:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:14:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:15:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:15:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:16:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:17:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:17:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:18:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:18:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:19:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:20:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:20:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:21:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:21:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:22:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:23:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:23:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:24:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:25:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:25:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:27:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:28:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:28:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:29:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:29:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:30:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:30:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:31:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:32:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:33:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:34:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:35:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:35:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:36:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:37:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:38:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:38:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:39:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:39:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:40:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:41:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:42:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:43:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:44:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:45:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:46:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:47:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:47:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:48:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:49:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:49:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:50:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:51:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:51:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:52:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:53:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:54:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:54:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:55:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:56:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:57:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:58:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:58:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:59:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m08:59:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:00:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:01:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:02:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:02:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:03:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:04:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:05:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:06:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:06:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:07:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:08:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:09:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:09:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:10:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:11:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:11:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:12:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:13:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:14:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:15:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:15:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:16:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:17:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:18:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:19:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:20:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:22:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:22:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:23:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:24:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:25:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:26:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:27:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:28:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:29:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:30:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:31:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:32:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:33:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:34:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:34:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:35:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:35:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:36:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:36:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:37:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:38:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:39:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:39:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:40:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:40:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:41:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:42:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:43:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:43:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:44:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:44:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:45:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:46:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:47:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:48:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:48:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:50:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:51:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:52:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:53:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:53:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:54:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:55:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:56:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:57:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:58:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m09:59:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:00:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:01:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:02:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:02:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:03:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:03:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:04:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:04:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:05:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:06:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:07:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:07:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:08:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:09:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:09:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:10:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:11:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:11:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:12:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:12:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:13:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:14:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:14:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:15:56[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:16:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:18:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:18:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:19:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:20:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:20:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:21:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:21:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:22:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:22:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:23:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:24:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:25:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:26:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:27:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:28:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:29:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:29:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:30:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:31:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:32:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:33:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:34:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:35:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:36:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:36:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:37:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:37:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:38:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:38:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:39:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:39:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:40:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:40:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:41:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:41:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:42:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:43:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:45:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:45:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:46:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:46:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:47:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:48:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:48:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:49:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:49:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:50:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:51:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:52:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:52:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:53:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:54:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:55:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:55:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:56:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:57:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:57:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:58:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:58:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m10:59:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:00:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:01:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:02:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:02:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:03:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:04:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:04:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:05:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:06:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:07:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:08:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:09:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:10:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:11:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:12:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:14:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:15:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:15:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:16:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:16:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:17:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:18:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:18:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:19:13[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:20:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:21:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:22:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:23:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:24:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:25:26[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:26:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:26:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:27:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:28:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:29:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:30:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:30:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:31:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:31:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:32:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:33:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:33:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:34:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:35:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:35:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:36:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:37:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:38:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:39:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:39:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:40:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:42:02[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:43:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:44:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:44:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:45:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:46:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:47:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:48:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:49:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:49:17[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:50:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:51:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:51:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:52:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:53:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:53:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:54:28[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:55:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:55:30[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:56:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:57:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:58:35[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m11:59:37[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:00:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:01:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:02:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:02:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:03:46[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:04:48[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:04:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:05:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:05:50[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:06:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:06:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:07:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:08:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:09:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:09:59[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:11:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:12:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:12:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:13:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:14:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:15:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:16:11[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:16:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:17:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:18:16[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:19:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:20:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:20:21[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:21:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:21:23[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:22:25[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:23:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:23:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:24:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:25:32[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:26:33[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:27:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:28:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:29:40[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:30:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:30:42[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:31:44[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:32:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:33:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:34:51[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:35:53[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:36:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:37:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:39:00[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:40:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:41:04[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:42:06[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:43:08[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:44:09[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:45:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:46:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:46:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:47:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:48:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:48:18[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:49:20[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:50:22[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:51:24[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:52:27[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:53:29[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:54:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:54:31[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:55:34[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:56:36[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:57:38[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:57:39[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:58:41[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m12:59:43[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:00:45[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:01:47[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:02:49[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:03:52[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:04:54[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:05:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:05:55[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:06:57[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:07:58[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:09:01[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:10:03[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:11:05[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:12:07[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:13:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:13:10[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:14:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:14:12[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:15:14[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m
+[32m13:15:15[0m | [31m[1mERROR   [0m | [36mAdam Clay[0m | [31m[1m❌ Error generating thought: Invalid API key[0m

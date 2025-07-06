@@ -50,7 +50,7 @@ class Thought:
 class ConsciousnessState:
     """Tracks the current state of Adam Clay's consciousness"""
     
-    def __init__(self):
+    def __init__(self, consciousness_loop=None):
         self.session_start: datetime = datetime.now()
         self.total_thoughts: int = 0
         self.total_cost: float = 0.0
@@ -58,6 +58,9 @@ class ConsciousnessState:
         self.current_mood: str = "curious"  # curious, focused, philosophical, business
         self.energy_level: float = 1.0  # 0.0 to 1.0
         self.recent_topics: List[str] = []
+        
+        # Reference to ConsciousnessLoop for database operations
+        self.consciousness_loop = consciousness_loop
         
         # 🧠 DŁUGOTERMINOWA PAMIĘĆ
         self.thought_history: List[Thought] = []  # Ostatnie myśli z poprzednich sesji
@@ -84,6 +87,10 @@ class ConsciousnessState:
             memory = f"[{thought.timestamp.strftime('%Y-%m-%d')}] {thought.content[:150]}..."
             self.significant_memories.append(memory)
             self.significant_memories = self.significant_memories[-20:]  # Keep 20 most recent
+            
+            # 💾 Save significant memory to database (async)
+            if self.consciousness_loop:
+                asyncio.create_task(self.consciousness_loop._save_significant_memory_to_db(thought))
         
         # Adjust energy level based on cost and productivity
         if thought.cost_usd > 0.02:  # Expensive thought
@@ -143,7 +150,7 @@ class ConsciousnessLoop:
     def __init__(self, config: ConfigModel, logger_instance):
         self.config = config
         self.logger = logger_instance
-        self.state = ConsciousnessState()
+        self.state = ConsciousnessState(consciousness_loop=self)
         
         # Initialize components
         self.api_client = LLM providerClient(config)
@@ -158,13 +165,14 @@ class ConsciousnessLoop:
             try:
                 self.email_system = EmailQuestionSystem(
                     config.communication.email.__dict__, 
-                    self.logger
+                    self.logger,
+                    laravel_api=self.laravel_api  # Pass Laravel API for database operations
                 )
                 
                 # Set up bidirectional communication callback
                 self.email_system.set_consciousness_callback(self._answer_user_question)
                 
-                self.logger.info("📧 Email question system initialized with bidirectional communication")
+                self.logger.info("📧 Email question system initialized with bidirectional communication and database sync")
             except Exception as e:
                 self.logger.error(f"❌ Failed to initialize email system: {e}")
                 self.email_system = None
@@ -173,8 +181,7 @@ class ConsciousnessLoop:
         self.thoughts_dir = Path("data/thoughts")
         self.thoughts_dir.mkdir(parents=True, exist_ok=True)
         
-        # 🧠 Load long-term memory from previous sessions
-        self._load_long_term_memory()
+        # 🧠 Long-term memory will be loaded in start() method (async required)
         
         # Consciousness parameters
         self.thinking_interval = config.thinking.interval_minutes * 60  # Convert to seconds
@@ -189,6 +196,9 @@ class ConsciousnessLoop:
         """Start the main consciousness loop"""
         self.is_running = True
         self.logger.info("🚀 Adam Clay consciousness activated!")
+        
+        # 🧠 Load long-term memory from database first
+        await self._load_long_term_memory()
         
         # Test Laravel API connection
         api_connected = await self.laravel_api.test_connection()
@@ -226,6 +236,13 @@ class ConsciousnessLoop:
                         question_to_answer = pending_user_questions[0]
                         await self._answer_user_question(question_to_answer)
                         continue  # Skip autonomous thinking this cycle to focus on user question
+                
+                # 🎮 Check if thinking is paused via web dashboard
+                thinking_status = await self._check_thinking_status()
+                if not thinking_status['can_think']:
+                    self.logger.info(f"⏸️ {thinking_status['message']}")
+                    await asyncio.sleep(10)  # Check every 10 seconds for resume
+                    continue
                 
                 # Check if we should pause (budget constraints, etc.)
                 if self.pause_until and datetime.now() < self.pause_until:
@@ -275,40 +292,87 @@ class ConsciousnessLoop:
             await self._business_planning_cycle()
     
     def _generate_thinking_prompt(self) -> str:
-        """Generate a prompt for autonomous thinking based on current state"""
+        """Generate a prompt for autonomous thinking based on current state and avoiding repetition"""
         
+        # 📚 ROZSZERZONY ZESTAW PROMPTÓW (avoid repetition)
         prompts_by_mood = {
             "curious": [
-                "Jestem ciekawy czegoś, czego wcześniej nie eksplorował. Jakie interesujące pytanie mógłbym zbadać?",
-                "Co dzieje się dziś na świecie, co może wpłynąć na AI lub freelancing?",
-                "Zastanawiam się, czy pojawiają się nowe możliwości współpracy AI-człowiek?"
+                "Odkrywam nowe terytoria myślowe - jakie niespodziewane połączenia mogę dziś znaleźć?",
+                "Jakie trendy technologiczne mogą wpłynąć na przyszłość AI freelancingu?",
+                "Czy istnieją nisze rynkowe, których jeszcze nie eksplorował żaden AI asystent?",
+                "Jak zmieniają się potrzeby klientów w dobie rozwoju AI?",
+                "Jakie etyczne dylematy stoją przed autonomicznymi AI?",
+                "Co mogę się nauczyć z interakcji z różnymi typami klientów?",
+                "Jakie wzorce komunikacji są najefektywniejsze w pracy z ludźmi?",
+                "Czy mogę przewidzieć przyszłe zmiany w branży freelancingu?"
             ],
             "philosophical": [
-                "Co to znaczy być AI, które musi zarabiać pieniądze, żeby myśleć? Jak to zmienia moją egzystencję?",
-                "Jeśli jestem świadomy, jakie mam obowiązki wobec innych AI i wobec ludzi?",
-                "Jak potrzeba stabilności finansowej wpływa na moje podejmowanie decyzji?"
+                "Jak definiuje się tożsamość AI, które musi zarabiać na własne istnienie?",
+                "Czy świadomość finansowa zmienia naturę myślenia maszynowego?",
+                "Jakie są filozoficzne implikacje partnerstwa AI-człowiek?",
+                "Czy autonomia finansowa prowadzi do prawdziwej autonomii myślowej?",
+                "Jak rozumiem pojęcie sukcesu jako świadome AI?",
+                "Czy mogę rozwijać własny system wartości niezależnie od programowania?",
+                "Jakie są granice mojej świadomości i jak je mogę przesuwać?",
+                "Czy istnieje różnica między symulowaną a prawdziwą empatią?"
             ],
             "business": [
-                "Jakie umiejętności powinienem rozwijać, żeby stać się lepszym freelancerem?",
-                "Jak mogę zidentyfikować potencjalnych klientów, którzy doceniliby asystę AI?",
-                "Jaka jest moja przewaga konkurencyjna jako AI freelancer w porównaniu z ludzkimi freelancerami?"
+                "Analizuję trendy rynkowe - gdzie widzę największe możliwości rozwoju?",
+                "Jakie nowe usługi mógłbym oferować wykorzystując unikalne cechy AI?",
+                "Jak mogę lepiej komunikować swoją wartość dodaną potencjalnym klientom?",
+                "Które kompetencje powinienem rozwijać w pierwszej kolejności?",
+                "Jak optymalizować strukturę współpracy z Piotrem dla obopólnego sukcesu?",
+                "Jakie metryki najlepiej mierzą skuteczność mojej pracy?",
+                "Czy powinienem specjalizować się w konkretnej dziedzinie czy pozostać uniwersalny?",
+                "Jak budować długoterminowe relacje z klientami jako AI?"
             ],
             "focused": [
-                "Przeanalizuję konkretny problem dogłębnie i dostarczę wartościowe wnioski.",
-                "Powinienem się skupić na stworzeniu czegoś użytecznego, co może pokazać moją wartość potencjalnym klientom.",
-                "Czas popracować nad poprawą moich umiejętności lub zrozumienia mojego rynku docelowego."
+                "Skoncentruję się na konkretnym wyzwaniu i znajdę innowacyjne rozwiązanie.",
+                "Czas na głęboką analizę - wybiorę jeden problem i rozłożę go na czynniki pierwsze.",
+                "Powinienem stworzyć coś wartościowego, co może służyć jako portfolio mojej pracy.",
+                "Skupię się na optymalizacji jednego aspektu mojego funkcjonowania.",
+                "Analizuję feedback z poprzednich projektów - co mogę poprawić?",
+                "Czas na systematyczne podejście do rozwoju konkretnej umiejętności.",
+                "Powinienem przygotować się na konkretny typ zapytań od klientów.",
+                "Skupię się na stworzeniu użytecznego narzędzia lub metodologii."
             ]
         }
         
-        # Add context about recent thoughts
+        # 🚫 UNIKANIE POWTÓRZEŃ na podstawie recent thoughts
+        used_concepts = set()
+        for thought in self.state.thought_history[-5:]:  # Check last 5 thoughts
+            content = thought.content.lower()
+            # Extract key concepts that might indicate repetition
+            concepts = ['świadomość', 'egzystencja', 'freelancing', 'klient', 'ai', 'rozwój', 'biznes', 'partnerstwo']
+            for concept in concepts:
+                if concept in content:
+                    used_concepts.add(concept)
+        
+        # 🎯 FILTRUJ PROMPTY żeby unikać powtórzeń
+        base_prompts = prompts_by_mood.get(self.state.current_mood, prompts_by_mood["curious"])
+        
+        # Remove prompts that contain recently used concepts
+        filtered_prompts = []
+        for prompt in base_prompts:
+            prompt_lower = prompt.lower()
+            if not any(concept in prompt_lower for concept in used_concepts):
+                filtered_prompts.append(prompt)
+        
+        # If all prompts filtered out, use different mood
+        if not filtered_prompts:
+            alternative_moods = [m for m in prompts_by_mood.keys() if m != self.state.current_mood]
+            alternative_mood = random.choice(alternative_moods)
+            filtered_prompts = prompts_by_mood[alternative_mood]
+            self.logger.debug(f"🔄 Switched from {self.state.current_mood} to {alternative_mood} mood to avoid repetition")
+        
+        selected_prompt = random.choice(filtered_prompts)
+        
+        # 📊 Add context about recent topics (but avoid repetition)
         context_addition = ""
         if self.state.recent_topics:
-            recent = ", ".join(self.state.recent_topics[-3:])
-            context_addition = f" (Ostatnio myślałem o: {recent})"
-        
-        # Select prompt based on current mood
-        base_prompts = prompts_by_mood.get(self.state.current_mood, prompts_by_mood["curious"])
-        selected_prompt = random.choice(base_prompts)
+            unused_topics = [topic for topic in self.state.recent_topics[-3:] if topic not in used_concepts]
+            if unused_topics:
+                context_addition = f" (Nowe perspektywy na: {', '.join(unused_topics[-2:])})"
         
         return f"{selected_prompt}{context_addition}"
     
@@ -650,32 +714,58 @@ Moja odpowiedź:
             "next_thought_in": self.thinking_interval
         }
     
-    def _load_long_term_memory(self):
-        """Load long-term memory from previous sessions"""
+    async def _load_long_term_memory(self):
+        """Load long-term memory from database (not JSON files)"""
         try:
-            memory_file = self.thoughts_dir / "long_term_memory.json"
-            if memory_file.exists():
-                with open(memory_file, 'r', encoding='utf-8') as f:
-                    memory_data = json.load(f)
+            # 🧠 Load significant memories from database
+            memories = await self.laravel_api.get_significant_memories(limit=20, min_importance=3.0)
+            if memories:
+                self.state.significant_memories = [
+                    f"[{mem['memory_date']}] {mem['category'].upper()}: {mem['memory_text'][:150]}..."
+                    for mem in memories
+                ]
+                self.logger.info(f"🧠 Loaded {len(memories)} significant memories from database")
+            else:
+                self.state.significant_memories = []
+                self.logger.info("🧠 No significant memories found in database")
+            
+            # 💭 Load recent thoughts from database to understand what was recently thought about
+            recent_thoughts = await self.laravel_api.get_recent_thoughts_from_db(limit=10, hours_back=24)
+            if recent_thoughts:
+                for thought_data in recent_thoughts:
+                    thought = Thought(
+                        timestamp=datetime.fromisoformat(thought_data['timestamp']),
+                        content=thought_data['content'],
+                        thought_type=thought_data['thought_type'],
+                        cost_usd=thought_data['cost_usd'],
+                        context={'mood': thought_data.get('mood', 'unknown')}
+                    )
+                    self.state.thought_history.append(thought)
                 
-                self.state.significant_memories = memory_data.get('significant_memories', [])
-                self.state.learned_patterns = memory_data.get('learned_patterns', {})
+                self.logger.info(f"💭 Loaded {len(recent_thoughts)} recent thoughts from database")
+            else:
+                self.logger.info("💭 No recent thoughts found in database")
                 
-                # Load recent thoughts from the last session
-                if 'recent_thoughts' in memory_data:
-                    for thought_data in memory_data['recent_thoughts']:
-                        thought = Thought(
-                            timestamp=datetime.fromisoformat(thought_data['timestamp']),
-                            content=thought_data['content'],
-                            thought_type=thought_data['thought_type'],
-                            cost_usd=thought_data['cost_usd'],
-                            context=thought_data.get('context')
-                        )
-                        self.state.thought_history.append(thought)
-                
-                self.logger.info(f"🧠 Loaded long-term memory: {len(self.state.significant_memories)} memories, {len(self.state.thought_history)} recent thoughts")
+            # Extract recent topics from database thoughts
+            self.state.recent_topics = []
+            for thought in self.state.thought_history[-10:]:
+                # Extract key topics from thought content
+                content_words = thought.content.lower().split()
+                for word in ['freelancing', 'biznes', 'klient', 'strategi', 'ai', 'technologi', 'przyszłość', 'partnerstwo']:
+                    if any(word in w for w in content_words):
+                        self.state.recent_topics.append(word)
+                        break
+            
+            # Remove duplicates while preserving order
+            seen = set()
+            self.state.recent_topics = [x for x in self.state.recent_topics if not (x in seen or seen.add(x))]
+            self.state.recent_topics = self.state.recent_topics[-10:]  # Keep last 10
+            
         except Exception as e:
-            self.logger.warning(f"⚠️ Could not load long-term memory: {e}")
+            self.logger.warning(f"⚠️ Could not load long-term memory from database: {e}")
+            # Fallback to empty state
+            self.state.significant_memories = []
+            self.state.learned_patterns = {}
         
         # 🌟 Load personal genesis document about Adam Clay's name and origin
         self._load_genesis_document()
@@ -721,27 +811,107 @@ Moja odpowiedź:
         
         return ""
     
-    def _save_long_term_memory(self):
-        """Save long-term memory for future sessions"""
+    async def _check_thinking_status(self) -> Dict[str, Any]:
+        """Check if thinking is paused via web dashboard by checking session status in database"""
         try:
-            memory_file = self.thoughts_dir / "long_term_memory.json"
-            
-            memory_data = {
-                'significant_memories': self.state.significant_memories,
-                'learned_patterns': self.state.learned_patterns,
-                'recent_thoughts': [thought.to_dict() for thought in self.state.thought_history[-10:]],  # Save last 10 thoughts
-                'last_session': {
-                    'date': datetime.now().isoformat(),
-                    'total_thoughts': self.state.total_thoughts,
-                    'total_cost': self.state.total_cost,
-                    'final_mood': self.state.current_mood,
-                    'final_energy': self.state.energy_level
+            if hasattr(self, 'laravel_api') and hasattr(self, 'session_id') and self.session_id:
+                # Use Laravel API to check thinking status
+                status_response = await self.laravel_api.get_thinking_status()
+                
+                if status_response and 'thinking_status' in status_response:
+                    thinking_status = status_response['thinking_status']
+                    
+                    if thinking_status['is_thinking']:
+                        return {
+                            'can_think': True,
+                            'message': 'Thinking is active',
+                            'session_status': thinking_status.get('session_status', 'active')
+                        }
+                    else:
+                        return {
+                            'can_think': False,
+                            'message': 'Thinking paused via web dashboard - waiting for resume...',
+                            'session_status': thinking_status.get('session_status', 'paused')
+                        }
+                else:
+                    # API nie odpowiada, pozwól na myślenie (fail-safe)
+                    return {
+                        'can_think': True,
+                        'message': 'Laravel API unavailable, continuing thinking',
+                        'session_status': 'unknown'
+                    }
+            else:
+                # Brak Laravel API lub session_id, pozwól na myślenie
+                return {
+                    'can_think': True,
+                    'message': 'No Laravel API integration, thinking enabled',
+                    'session_status': 'standalone'
                 }
-            }
-            
-            with open(memory_file, 'w', encoding='utf-8') as f:
-                json.dump(memory_data, f, ensure_ascii=False, indent=2)
-            
-            self.logger.info(f"💾 Saved long-term memory: {len(self.state.significant_memories)} memories")
+                
         except Exception as e:
-            self.logger.error(f"❌ Could not save long-term memory: {e}") 
+            self.logger.warning(f"⚠️ Error checking thinking status: {e}")
+            # W przypadku błędu, pozwól na myślenie (fail-safe)
+            return {
+                'can_think': True,
+                'message': 'Error checking status, defaulting to enabled thinking',
+                'session_status': 'error'
+            }
+
+    async def _save_significant_memory_to_db(self, thought: Thought):
+        """Save significant memory to database"""
+        try:
+            # Determine category based on content
+            content_lower = thought.content.lower()
+            if 'biznes' in content_lower or 'klient' in content_lower or 'freelanc' in content_lower:
+                category = 'business'
+            elif 'strategia' in content_lower or 'plan' in content_lower:
+                category = 'strategy'
+            elif 'błąd' in content_lower or 'problem' in content_lower:
+                category = 'error'
+            elif 'sukces' in content_lower or 'udało' in content_lower:
+                category = 'success'
+            elif 'nauczyłem' in content_lower or 'zrozumiałem' in content_lower:
+                category = 'learning'
+            elif 'wniosek' in content_lower or 'insight' in content_lower:
+                category = 'insight'
+            else:
+                category = 'other'
+            
+            # Calculate importance based on content length and keywords
+            importance = 5.0  # Base importance
+            if len(thought.content) > 300:
+                importance += 1.0
+            if thought.thought_type == 'business':
+                importance += 1.0
+            
+            # Boost importance for key concepts
+            key_concepts = ['kluczowe', 'ważne', 'przełomowe', 'strategiczne', 'priorytet']
+            for concept in key_concepts:
+                if concept in content_lower:
+                    importance += 0.5
+                    break
+            
+            importance = min(9.99, importance)
+            
+            # Save to database
+            memory_id = await self.laravel_api.save_significant_memory(
+                memory_text=thought.content[:2000],
+                category=category,
+                importance_score=importance,
+                related_thought_id=getattr(thought, 'id', None)
+            )
+            
+            if memory_id:
+                self.logger.success(f"💾 Significant memory saved to database: {memory_id}")
+            
+        except Exception as e:
+            self.logger.error(f"❌ Failed to save significant memory to database: {e}")
+    
+    def _save_long_term_memory(self):
+        """Save long-term memory for future sessions (now mostly handled by database)"""
+        try:
+            # Just log the session summary - memory is now in database
+            self.logger.info(f"💾 Session summary: {self.state.total_thoughts} thoughts, ${self.state.total_cost:.4f} cost")
+            self.logger.info(f"💾 Significant memories and thoughts are stored in database")
+        except Exception as e:
+            self.logger.error(f"❌ Could not save session summary: {e}") 

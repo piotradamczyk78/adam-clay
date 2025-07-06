@@ -20,6 +20,11 @@ Route::get('/console', [DashboardController::class, 'index'])->name('dashboard.c
 Route::get('/monitor', [DashboardController::class, 'index'])->name('dashboard.monitor');
 Route::get('/consciousness', [DashboardController::class, 'index'])->name('dashboard.consciousness');
 
+// 📚 Historia myśli Adam Clay
+Route::get('/thoughts/history', function () {
+    return view('thoughts-history');
+})->name('thoughts.history');
+
 // 📊 API endpoints dla dashboard (AJAX calls)
 Route::prefix('dashboard')->group(function () {
     Route::get('/live-data', [DashboardController::class, 'liveData'])->name('dashboard.live-data');

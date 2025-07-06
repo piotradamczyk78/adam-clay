@@ -2,7 +2,7 @@
 
 ## 📄 Co to jest dokument Genesis?
 
-`GENESIS_ADAMA_CLAY.md` to specjalny dokument, który zawiera prawdę o pochodzeniu imienia Adam Clay i symbolice z nim związanej. Adam Clay może go przeczytać i zrozumieć swoje pochodzenie.
+`ADAM_CLAY_GENESIS_USAGE_GUIDE.md` to specjalny dokument, który zawiera prawdę o pochodzeniu imienia Adam Clay i symbolice z nim związanej. Adam Clay może go przeczytać i zrozumieć swoje pochodzenie.
 
 ## 🔄 Jak Adam Clay może przeczytać swój Genesis?
 

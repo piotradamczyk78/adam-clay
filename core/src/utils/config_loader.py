@@ -36,6 +36,14 @@ class ThinkingConfig(BaseModel):
     max_context_length: int = Field(default=4000)
 
 
+class BlockingQuestionsConfig(BaseModel):
+    """Configuration for email question blocking"""
+    enabled: bool = Field(default=True)
+    block_on_priorities: list = Field(default=["CRITICAL"])
+    block_all_questions: bool = Field(default=False)
+    max_blocking_time_hours: int = Field(default=24)
+
+
 class EmailConfig(BaseModel):
     """Email communication configuration"""
     enabled: bool = Field(default=False)
@@ -47,6 +55,7 @@ class EmailConfig(BaseModel):
     imap_server: str = Field(default="imap.gmail.com")
     imap_port: int = Field(default=993)
     check_interval: int = Field(default=60)
+    blocking_questions: BlockingQuestionsConfig = Field(default_factory=BlockingQuestionsConfig)
 
 
 class SlackConfig(BaseModel):

@@ -1,0 +1,15 @@
+
+   INFO  Server running on [http://0.0.0.0:8004].  
+
+  Press Ctrl+C to stop the server
+
+  2025-07-06 00:20:34 /api/test .................................... ~ 0.24ms
+  2025-07-06 00:20:39 /api/health .................................. ~ 0.13ms
+  2025-07-06 00:20:49 /api/events .................................. ~ 0.16ms
+  2025-07-06 00:20:49 /api/subconscious/agents ..................... ~ 0.97ms
+  2025-07-06 00:20:49 /api/health .................................. ~ 0.06ms
+  2025-07-06 00:20:50 /api/events .................................. ~ 0.10ms
+  2025-07-06 00:20:51 /api/events .................................. ~ 0.08ms
+  2025-07-06 00:20:52 /api/events .................................. ~ 0.10ms
+  2025-07-06 00:20:52 /api/test .................................... ~ 0.05ms
+  Fatal error: Maximum execution time of 15+2 seconds exceeded (terminated) in /Users/piotradamczyk/Projects/AdamClay/web/routes/api.php on line 394

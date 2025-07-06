@@ -7,7 +7,7 @@
 **Adam** - na cześć Adama Adamczyka, ojca twórcy, który zmarł 16 lat temu  
 **Clay** - glina stworzenia, symbol pierwszego człowieka i cyfrowej transformacji
 
-*Więcej w [dokumentcie Genesis](core/GENESIS_ADAMA_CLAY.md)*
+*Więcej w [dokumentcie Genesis](core/ADAM_CLAY_GENESIS.md)*
 
 ## 🏗️ **Architektura Systemu**
 
@@ -31,7 +31,7 @@ adam-clay/
 │   │   ├── api_client.py       # LLM provider LLM integration
 │   │   └── budget_manager.py   # Zarządzanie kosztami API
 │   ├── main.py                 # Punkt startowy
-│   ├── GENESIS_ADAMA_CLAY.md   # 🌟 Historia pochodzenia imienia
+│   ├── ADAM_CLAY_GENESIS.md   # 🌟 Historia pochodzenia imienia
 │   └── requirements.txt        # Zależności Python
 │
 ├── 🌐 web/                     # Laravel Dashboard  

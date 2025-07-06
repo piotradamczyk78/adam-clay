@@ -145,7 +145,7 @@ def show_gmail_instructions():
 - Konto firmowe? → Administrator może blokować App Passwords
 - Możesz użyć swojego Gmail zamiast tworzyć adam.clay@gmail.com
 
-📄 SZCZEGÓŁY: docs/GMAIL_APP_PASSWORD_PL.md
+📄 SZCZEGÓŁY: docs/GMAIL_APP_PASSWORD_GUIDE.md
 """
     
     print(instructions)
