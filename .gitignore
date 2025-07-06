@@ -1,40 +1,110 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
+# 🌟 Adam Clay - Monorepo .gitignore
 
-# API Keys & Config
-.env
-config.json
-secrets.json
+# ==========================================
+# 🧠 PYTHON CORE (core/)
+# ==========================================
+
+# Python bytecode
+core/__pycache__/
+core/**/__pycache__/
+core/*.py[cod]
+core/**/*.py[cod]
+core/*$py.class
+
+# Virtual environments
+core/adam_clay_env/
+core/venv/
+core/env/
+core/.venv/
+
+# Python specific
+core/*.egg-info/
+core/dist/
+core/build/
+core/.coverage
+core/.pytest_cache/
+
+# Environment variables
+core/.env
+core/.env.local
+
+# Data and logs
+core/data/thoughts/*.json*
+core/logs/
+core/*.log
+
+# ==========================================
+# 🌐 LARAVEL WEB (web/)
+# ==========================================
+
+# Laravel dependencies
+web/vendor/
+
+# Laravel environment
+web/.env
+web/.env.backup
+web/.env.production
+
+# Laravel storage & cache
+web/storage/*.key
+web/storage/app/*
+web/storage/framework/cache/*
+web/storage/framework/sessions/*
+web/storage/framework/testing/*
+web/storage/framework/views/*
+web/storage/logs/*
+
+# Laravel build
+web/public/hot
+web/public/storage
+web/public/css/*
+web/public/js/*
+web/node_modules/
+web/npm-debug.log*
+web/yarn-error.log
+
+# ==========================================
+# 🍎 MACOS
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# 🔧 DEVELOPMENT TOOLS
+# ==========================================
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS
-.DS_Store
-Thumbs.db
+# Temporary files
+*.tmp
+*.temp
+.cache/
 
-# Logs
-*.log
-logs/
+# ==========================================
+# 📊 PROJECT SPECIFIC
+# ==========================================
 
-# Database
-*.db
-*.sqlite3
+# Conversation logs
+konwersacja*.txt
 
-# Adam Clay specific
+# App temporary directory
+app/
+
+# Test outputs
+test_output/
+debug/
+
+# Adam Clay specific files
 consciousness_stream.json
 api_usage.log
 wallet_data.json 
