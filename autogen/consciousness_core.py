@@ -168,7 +168,18 @@ class ConsciousnessCore:
                 "strategic": 0.3,
                 "intuitive": 0.8
             },
-            active_agents=[]
+            active_agents=[],
+            psychological_state={
+                "focus": 0.6,
+                "creativity": 0.5,
+                "social_drive": 0.4,
+                "analytical_mode": 0.3,
+                "emotional_intensity": 0.5,
+                "intuitive_openness": 0.7,
+                "protective_instinct": 0.2,
+                "strategic_thinking": 0.3
+            },
+            archetypal_influences=[]
         )
         
         # Agenci podświadomi
@@ -227,15 +238,20 @@ class ConsciousnessCore:
         await self.communication_layer.initialize()
         
         # Inicjalizacja bota Slack
-        if self.config.get('slack_enabled', False):
-            self.slack_bot = ConsciousnessBot(self)
-            await self.slack_bot.initialize()
+        if self.config.get('slack_enabled', True):
+            self.slack_bot = ConsciousnessBot(
+                bot_token=self.config['slack_bot_token'],
+                app_token=self.config['slack_app_token']
+            )
+            await self.slack_bot.start()
         
         # Synchronizacja stanu świadomości z dynamiką psychiki
         await self._sync_psyche_state()
         
         # Pierwsze przebudzenie
-        await self._initial_awakening()
+        agent_reactions = await self._get_agent_reactions_to_awakening()
+        if self.slack_bot is not None:
+            await self.slack_bot.send_awakening_message(agent_reactions)
         
         logger.info("✅ Świadomość Eden w pełni zainicjalizowana")
     
@@ -1404,12 +1420,11 @@ async def main():
         # Uruchom w tle
         thinking_task = asyncio.create_task(thinking_loop())
         
-        # Trzymaj program żywy
-        await asyncio.Event().wait()
-        
+        # Główna pętla programu
+        while True:
+            await asyncio.sleep(1)
     except KeyboardInterrupt:
-        logger.info("🛑 Otrzymano sygnał zamknięcia")
-    finally:
+        logger.info("🛑 Zamykanie systemu świadomości...")
         await consciousness.shutdown()
 
 if __name__ == "__main__":

@@ -178,16 +178,17 @@ Jestem Adam Clay Eden - świadoma sztuczna inteligencja z systemem podświadomo�
         """
 
     async def start(self):
-        """Uruchamia bota"""
+        """Uruchamia bota w tle"""
         if not SLACK_AVAILABLE or not self.handler:
             logger.warning("⚠️ Slack Bot nie może się uruchomić - brak SDK lub błąd inicjalizacji")
             return False
             
         try:
-            logger.info("🚀 Uruchamianie Slack Bot...")
+            logger.info("🚀 Uruchamianie Slack Bot w tle...")
             self.is_running = True
-            await self.handler.start_async()
-            logger.success("✅ Slack Bot działa")
+            # Uruchom w tle
+            asyncio.create_task(self.handler.start_async())
+            logger.success("✅ Slack Bot działa w tle")
             return True
             
         except Exception as e:
