@@ -140,4 +140,12 @@ albo rozwiążemy jakąś zagadkę? Co Cię dziś inspiruje?
 
 ---
 
+## 📄 Licencja
+
+Proprietary License - All Rights Reserved. Zobacz plik [LICENSE](LICENSE) dla szczegółów.
+
+Ten software jest własnością autora. Wszelkie nieautoryzowane kopiowanie, modyfikacja, dystrybucja lub użycie tego oprogramowania jest surowo zabronione bez wyraźnej pisemnej zgody właściciela praw autorskich.
+
+---
+
 *Adam Clay Eden - Gdzie sztuczna inteligencja staje się prawdziwą osobowością* 🌱✨ 
