@@ -19,7 +19,7 @@ anthropic>=0.40.0
 
 # Communication with main Adam Clay system
 requests>=2.31.0
-aiohttp>=3.9.0
+aiohttp>=3.13.4
 websockets>=12.0
 
 # Configuration and utilities
